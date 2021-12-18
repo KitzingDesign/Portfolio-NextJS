@@ -6,6 +6,7 @@ import {
 	PaperAirplaneIcon,
 	BookmarkIcon,
 } from "@heroicons/react/outline";
+import Image from "next/image";
 
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -31,7 +32,6 @@ const DigiHeader = () => {
 							slidesPerView={1}
 							spaceBetween={0}
 							loop={true}
-							slidesPerView={"auto"}
 							style={{ width: "100%", height: "100%" }}
 						>
 							<SwiperSlide>
@@ -70,36 +70,47 @@ const DigiHeader = () => {
 													clickable: false,
 												}}
 												loop={true}
-												slidesPerView={"auto"}
 												style={{ width: "100%", height: "100%" }}
 											>
 												<SwiperSlide>
-													<img
-														className={styles.imgContainer}
-														src="/kry-stor/eldler-stor.jpg"
-														alt="Time Line"
-													/>
+													<div className={styles.imgContainer}>
+														<Image
+															width={1000}
+															height={600}
+															src="/kry-stor/eldler-stor.jpg"
+															alt="Time Line"
+														/>
+													</div>
 												</SwiperSlide>
 												<SwiperSlide>
-													<img
-														className={styles.imgContainer}
-														src="/kry-stor/ely-stor.jpg"
-														alt="Ely comercial"
-													/>
+													<div className={styles.imgContainer}>
+														<Image
+															width={700}
+															height={500}
+															src="/kry-stor/ely-stor.jpg"
+															alt="Ely comercial"
+														/>
+													</div>
 												</SwiperSlide>
 												<SwiperSlide>
-													<img
-														className={styles.imgContainer}
-														src="/kry-stor/jury-stor.jpg"
-														alt="Time Line"
-													/>
+													<div className={styles.imgContainer}>
+														<Image
+															width={1000}
+															height={560}
+															src="/kry-stor/jury-stor.jpg"
+															alt="Time Line"
+														/>
+													</div>
 												</SwiperSlide>
 												<SwiperSlide>
-													<img
-														className={styles.imgContainer}
-														src="/kry-stor/gyno-stor.jpg"
-														alt="Time Line"
-													/>
+													<div className={styles.imgContainer}>
+														<Image
+															width={1000}
+															height={600}
+															src="/kry-stor/gyno-stor.jpg"
+															alt="Time Line"
+														/>
+													</div>
 												</SwiperSlide>
 											</Swiper>
 										</div>

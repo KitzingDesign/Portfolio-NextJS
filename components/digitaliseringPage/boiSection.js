@@ -1,4 +1,5 @@
 import styles from "./boiSection.module.css";
+import Image from "next/image";
 
 import Divider from "../UI/divider";
 
@@ -9,11 +10,14 @@ const BoiSection = () => {
 				<div data-aos="new-animation">
 					<Divider />
 				</div>
-				<img
-					className={styles.imgContainer}
-					src={`/kry-stor/boi-stor-gif.gif`}
-					alt="Time Line"
-				/>
+				<div className={styles.imgContainer}>
+					<Image
+						width={1800}
+						height={1200}
+						src={`/kry-stor/boi-stor-gif.gif`}
+						alt="Boi"
+					/>
+				</div>
 			</div>
 		</div>
 	);

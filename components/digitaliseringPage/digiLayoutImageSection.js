@@ -1,6 +1,6 @@
 import styles from "./digiLayoutImageSection.module.css";
 import Divider from "../UI/divider";
-import AOS from "aos";
+import Image from "next/image";
 
 const DigiLayoutImageSection = (props) => {
 	return (
@@ -9,8 +9,9 @@ const DigiLayoutImageSection = (props) => {
 				<div data-aos="new-animation">
 					<Divider />
 				</div>
-				<img
-					className={styles.imgContainer}
+				<Image
+					width={1900}
+					height={1200}
 					src={`/kry-stor/${props.img}.png`}
 					alt="Time Line"
 				/>
