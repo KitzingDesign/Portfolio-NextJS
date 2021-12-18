@@ -1,0 +1,64 @@
+.container {
+	position: relative;
+	height: 90rem;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.parent {
+	position: absolute;
+	z-index: 2;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	height: 65rem;
+	width: 65rem;
+	border-radius: 100%;
+	background-color: rgba(255, 255, 255, 0.96);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+}
+
+.child {
+	position: absolute;
+	transform: translateZ(15rem);
+	width: 50%;
+	color: black;
+}
+
+.underImg {
+	position: absolute;
+	width: 150vw;
+	height: 20rem;
+	background-color: #c1e1c1;
+	transform: translateZ(1rem);
+}
+.under {
+	position: absolute;
+	z-index: -2;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: lightgray;
+}
+
+@media (max-width: 42em) {
+	.parent {
+		height: 60rem;
+		width: 60rem;
+	}
+}
+
+@media (max-height: 25em) {
+	.container {
+		height: 70rem;
+	}
+	.parent {
+		height: 50rem;
+		width: 50rem;
+	}
+}

@@ -1,0 +1,21 @@
+.container {
+	width: 70vw;
+	margin: 0 auto;
+}
+
+.container img {
+	width: 100%;
+	border: solid 0.5rem white;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container p {
+	padding-top: 2.4rem;
+	padding-bottom: 1.6rem;
+}
+
+@media (max-width: 25em) {
+	.container {
+		width: 85vw;
+	}
+}
