@@ -151,8 +151,10 @@
 
 	gap: 0.5vw;
 }
-.profileInfo img {
-	height: 70%;
+.profileImg {
+	height: 4rem;
+	width: 4rem;
+	padding-bottom: 2.4rem;
 }
 .profileInfo p {
 	line-height: 1.1;

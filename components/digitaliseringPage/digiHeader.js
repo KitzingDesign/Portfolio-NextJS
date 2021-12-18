@@ -24,8 +24,9 @@ const DigiHeader = () => {
 		<div className={styles.upperContainer}>
 			<div className={styles.kryImg}>
 				<div className={styles.kryImgContainer}>
-					<img className={styles.phone} src="/Phone.png" />
-
+					<div className={styles.phone}>
+						<Image width={950} height={1700} src="/Phone.png" />
+					</div>
 					<div className={styles.swipes}>
 						<Swiper
 							id="swiper-color"
@@ -56,7 +57,15 @@ const DigiHeader = () => {
 								<div className={styles.swipe}>
 									<div className={styles.secondSlide}>
 										<div className={styles.profileInfo}>
-											<img src="/Startbild.svg" alt="Time Line" />
+											<div className={styles.profileImg}>
+												<Image
+													layout="responsive"
+													width={10}
+													height={8}
+													src="/Startbild.svg"
+													alt="Time Line"
+												/>
+											</div>
 											<p>
 												<b>JakobKitzingDesign</b> <br /> sponsored
 											</p>
@@ -85,8 +94,9 @@ const DigiHeader = () => {
 												<SwiperSlide>
 													<div className={styles.imgContainer}>
 														<Image
-															width={700}
-															height={500}
+															layout="responsive"
+															width={1000}
+															height={700}
 															src="/kry-stor/ely-stor.jpg"
 															alt="Ely comercial"
 														/>

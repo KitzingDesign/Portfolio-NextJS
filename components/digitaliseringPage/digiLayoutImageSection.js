@@ -9,6 +9,7 @@ const DigiLayoutImageSection = (props) => {
 				<div data-aos="new-animation">
 					<Divider />
 				</div>
+
 				<Image
 					width={1900}
 					height={1200}
