@@ -5,7 +5,7 @@ import KrySection from "../components/homePage/digitaliseringSection";
 import ProsexSection from "../components/homePage/prosexSection";
 import Footer from "../components/Layout/footer";
 import styles from "./index.module.css";
-import withTransition from "../components/HOC/withTransition";
+import WithTransition from "../components/HOC/withTransition";
 
 import React, { Fragment, useEffect } from "react";
 import ReactDOM from "react-dom";
@@ -90,7 +90,7 @@ const HomePage = () => (
 		/>
 	</div>
 );
-export default withTransition(HomePage);
+export default WithTransition(HomePage);
 
 {
 	/* <div id="fullpage">

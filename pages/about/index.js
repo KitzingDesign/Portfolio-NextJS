@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { EqualStencilFunc } from "three";
 import AboutContent from "../../components/AboutPage/aboutContent";
 import AboutHeader from "../../components/AboutPage/aboutHeader";
-import withTransition from "../../components/HOC/withTransition";
+import WithTransition from "../../components/HOC/withTransition";
 import AOS from "aos";
 
 import Footer from "../../components/Layout/footer";
@@ -21,4 +21,4 @@ const AboutPage = () => {
 	);
 };
 
-export default withTransition(AboutPage);
+export default WithTransition(AboutPage);

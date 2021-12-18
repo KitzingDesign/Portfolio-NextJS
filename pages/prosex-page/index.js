@@ -1,5 +1,5 @@
 import ProsexHeader from "../../components/prosexPage/prosexHeader";
-import withTransition from "../../components/HOC/withTransition";
+import WithTransition from "../../components/HOC/withTransition";
 import { Fragment, useEffect } from "react";
 import OmProsex from "../../components/prosexPage/omProsex";
 import ProsexKollage from "../../components/prosexPage/prosexKollage";
@@ -20,4 +20,4 @@ const ProsexPage = () => {
 	);
 };
 
-export default withTransition(ProsexPage);
+export default WithTransition(ProsexPage);

@@ -5,7 +5,7 @@ import KandidatarbeteHeader from "../../components/kandidatarbetePage/kandidatar
 import KandidatarbeteProblem from "../../components/kandidatarbetePage/kandidatarbeteProblem";
 import KandidatarbeteKoncept from "../../components/kandidatarbetePage/kandidatarbeteKoncept";
 import KandidatarbeteSlutkocept from "../../components/kandidatarbetePage/kandidatarbeteSlutkoncept";
-import withTransition from "../../components/HOC/withTransition";
+import WithTransition from "../../components/HOC/withTransition";
 import Footer from "../../components/Layout/footer";
 
 import styles from "./index.module.css";
@@ -30,4 +30,4 @@ const KandidatarbetePage = () => {
 	);
 };
 
-export default withTransition(KandidatarbetePage);
+export default WithTransition(KandidatarbetePage);

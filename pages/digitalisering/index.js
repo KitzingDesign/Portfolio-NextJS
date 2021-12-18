@@ -3,7 +3,7 @@ import BoiSection from "../../components/digitaliseringPage/boiSection";
 import DigiBakgrund from "../../components/digitaliseringPage/digiBakgrund";
 import DigiHeader from "../../components/digitaliseringPage/digiHeader";
 import DigiLayoutImageSection from "../../components/digitaliseringPage/digiLayoutImageSection";
-import withTransition from "../../components/HOC/withTransition";
+import WithTransition from "../../components/HOC/withTransition";
 
 import AOS from "aos";
 import Footer from "../../components/Layout/footer";
@@ -29,4 +29,4 @@ const KryPage = () => {
 	);
 };
 
-export default withTransition(KryPage);
+export default WithTransition(KryPage);
