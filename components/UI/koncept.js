@@ -1,7 +1,7 @@
 import styles from "./koncept.module.css";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-
+import Image from "next/image";
 const Koncept = (props) => {
 	return (
 		<div className={styles.container}>
@@ -9,7 +9,14 @@ const Koncept = (props) => {
 			<p>{props.text}</p>
 
 			<Zoom>
-				<img src={props.img} style={{ width: "100%" }}></img>
+				<div className={styles.img}>
+					<Image
+						width={1000}
+						height={700}
+						src={props.img}
+						alt="koncept"
+					></Image>
+				</div>
 			</Zoom>
 		</div>
 	);

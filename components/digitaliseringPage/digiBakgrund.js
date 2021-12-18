@@ -1,5 +1,6 @@
 import Divider from "../UI/divider";
 import styles from "./digiBakgrund.module.css";
+import Image from "next/image";
 
 const DigiBakgrund = () => {
 	return (
@@ -22,41 +23,55 @@ const DigiBakgrund = () => {
 				som jag både ser för och nackdelar med. Detta fick mig att fundera, hur
 				långt kan man egentligen dra det? <br />
 				<br />
-				"Företagen" nedan är skapade av mig för att leka med tanken på hur långt
-				viritualiseringen kan gå innan det blir orimligt. Tanken var även att ge
-				en tankeställare, hur mycket går egentligen förlorat i de appar som
-				redan finns idag?
+				&#34;Företagen&#34; nedan är skapade av mig för att leka med tanken på
+				hur långt viritualiseringen kan gå innan det blir orimligt. Tanken var
+				även att ge en tankeställare, hur mycket går egentligen förlorat i de
+				appar som redan finns idag?
 			</section>
 
 			<h3 data-aos="new-animation">Featured Companies</h3>
 			<div data-aos="new-animation">
 				<div className={styles.flexImg}>
-					<img
-						className={styles.imgContainer}
-						src="/Loggor-namn/Eldler-namn.svg"
-						alt="Time Line"
-					/>
-
-					<img
-						className={styles.imgContainer}
-						src="/Loggor-namn/Jury-namn.svg"
-						alt="Time Line"
-					/>
-					<img
-						className={styles.imgContainer}
-						src="/Loggor-namn/Boi-namn.svg"
-						alt="Time Line"
-					/>
-					<img
-						className={styles.imgContainer}
-						src="/Loggor-namn/Ely-namn.svg"
-						alt="Time Line"
-					/>
-					<img
-						className={styles.imgContainer}
-						src="/Loggor-namn/Gyno-namn.svg"
-						alt="Time Line"
-					/>
+					<div className={styles.imgContainer}>
+						<Image
+							width={100}
+							height={100}
+							src="/Loggor-namn/Eldler-namn.svg"
+							alt="Eldler"
+						/>
+					</div>
+					<div className={styles.imgContainer}>
+						<Image
+							width={100}
+							height={100}
+							src="/Loggor-namn/Jury-namn.svg"
+							alt="Jury"
+						/>
+					</div>
+					<div className={styles.imgContainer}>
+						<Image
+							width={100}
+							height={100}
+							src="/Loggor-namn/Boi-namn.svg"
+							alt="Boi"
+						/>
+					</div>
+					<div>
+						<Image
+							width={100}
+							height={100}
+							src="/Loggor-namn/Ely-namn.svg"
+							alt="Ely"
+						/>
+					</div>
+					<div className={styles.imgContainer}>
+						<Image
+							width={100}
+							height={100}
+							src="/Loggor-namn/Gyno-namn.svg"
+							alt="Time Line"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>

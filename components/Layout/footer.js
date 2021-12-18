@@ -1,5 +1,6 @@
 import styles from "./footer.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
 	return (
@@ -9,10 +10,10 @@ const Footer = () => {
 					Portfolio <br /> Jakob Kitzing
 				</h2>
 				<div className={styles.links}>
-					<Link href="/">
+					<Link href="/" passHref={true}>
 						<p>Projects</p>
 					</Link>
-					<Link href="/about">
+					<Link href="/about" passHref={true}>
 						<p>About</p>
 					</Link>
 				</div>
@@ -23,22 +24,34 @@ const Footer = () => {
 					</p>
 				</div>
 				<div className={styles.socialMedia}>
-					<Link href="https://se.linkedin.com/in/jakob-kitzing-27b4991b7">
+					<Link
+						href="https://se.linkedin.com/in/jakob-kitzing-27b4991b7"
+						passHref={true}
+					>
 						<a target="_blank">
-							<img
-								className={styles.social}
-								src="/footer/linkedin.svg"
-								alt="LinkdIn logo"
-							/>
+							<div className={styles.social}>
+								<Image
+									width={1000}
+									height={1000}
+									src="/footer/linkedin.svg"
+									alt="LinkdIn logo"
+								/>
+							</div>
 						</a>
 					</Link>
-					<Link href="https://www.instagram.com/jakobkitzing/?hl=en">
+					<Link
+						href="https://www.instagram.com/jakobkitzing/?hl=en"
+						passHref={true}
+					>
 						<a target="_blank">
-							<img
-								className={styles.social}
-								src="/footer/instagram.svg"
-								alt="Intagram logo"
-							/>
+							<div className={styles.social}>
+								<Image
+									width={1000}
+									height={1000}
+									src="/footer/instagram.svg"
+									alt="Intagram logo"
+								/>
+							</div>
 						</a>
 					</Link>
 				</div>

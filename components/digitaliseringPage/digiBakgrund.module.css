@@ -46,8 +46,9 @@
 
 .flexImg {
 	margin: 0 auto;
-	justify-content: space-around;
 	align-items: center;
+	justify-content: center;
+	gap: 6.4rem;
 	display: flex;
 	height: 8vw;
 	/* width: 80%; */
@@ -57,6 +58,5 @@
 	opacity: 50%;
 }
 
-.flexImg img {
-	height: 70%;
+.imgContainer {
 }

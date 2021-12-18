@@ -1,4 +1,5 @@
 import styles from "./aboutHeader.module.css";
+import Image from "next/image";
 
 import Tilt from "react-tilt";
 
@@ -12,11 +13,14 @@ const AboutHeader = () => {
 				<div className={styles.underImg}>
 					<p>About me</p>
 				</div>
-				<img
-					className={styles.child}
-					src="/Startbild.svg"
-					alt="Jakob Kitzing"
-				/>
+				<div className={styles.child}>
+					<Image
+						width={1000}
+						height={1000}
+						src="/Startbild.svg"
+						alt="Jakob Kitzing"
+					/>
+				</div>
 			</Tilt>
 
 			{/* <div className={styles.under}>

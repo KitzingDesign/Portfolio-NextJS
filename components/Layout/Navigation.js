@@ -45,7 +45,12 @@ const Nav = () => {
 								: `${styles.containerAnimationOut} ${styles.img}`
 						}
 					>
-						<Image width={100} height={100} src="/Nav-logo.svg" />
+						<Image
+							width={100}
+							height={100}
+							src="/Nav-logo.svg"
+							alt="nav logo"
+						/>
 					</div>
 				</Link>
 				<nav
