@@ -16,7 +16,7 @@
 	margin-bottom: 2.4rem;
 }
 
-.contentImg img {
+.img {
 	width: 50vw;
 }
 
@@ -76,7 +76,7 @@
 		padding-bottom: 2.4rem;
 		margin-bottom: 2.4rem;
 	}
-	.contentImg img {
+	.img {
 		width: 100%;
 	}
 }

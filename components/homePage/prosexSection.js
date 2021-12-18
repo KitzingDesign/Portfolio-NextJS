@@ -1,5 +1,5 @@
 import ProjectLink from "../UI/Project-link";
-
+import Image from "next/image";
 import styles from "./prosexSection.module.css";
 
 // import produktImg from "public/static/tre-flaskor.png";
@@ -36,7 +36,14 @@ const ProsexSection = (props) => {
 				}
 				id="Bild2"
 			>
-				<img src="/tre-flaskor.png" alt="prosex. BeerBottle" />
+				<div className={styles.img}>
+					<Image
+						width={1000}
+						height={800}
+						src="/tre-flaskor.png"
+						alt="prosex. BeerBottle"
+					/>
+				</div>
 			</div>
 		</div>
 	);

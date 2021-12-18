@@ -1,5 +1,6 @@
 import styles from "./kandidatarbeteSection.module.css";
 import ProjectLink from "../UI/Project-link";
+import Image from "next/image";
 
 // import produktImg from "public/static/herobild.png";
 const stay = false;
@@ -15,7 +16,12 @@ const KandidatarbeteSection = (props) => {
 				}
 				id="Bild"
 			>
-				<img src="/herobild.png" />
+				<Image
+					width={1000}
+					height={1000}
+					src="/herobild.png"
+					alt="kandidatarbete"
+				/>
 			</div>
 			<div
 				className={

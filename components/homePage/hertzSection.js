@@ -1,4 +1,5 @@
 import ProjectLink from "../UI/Project-link";
+import Image from "next/image";
 
 import styles from "./hertzSection.module.css";
 // import produktImg from "public/static/Macbook-mockup-hertz.jpg";
@@ -30,7 +31,12 @@ const HertzSection = (props) => {
 					stay ? `${styles.contentImg} ${styles.visableImg}` : styles.contentImg
 				}
 			>
-				<img src="/Macbook-mockup-hertz.png" alt="Mockup Car Rental webpage" />
+				<Image
+					width={1000}
+					height={1000}
+					src="/Macbook-mockup-hertz.png"
+					alt="Mockup Car Rental webpage"
+				/>
 			</div>
 		</div>
 	);

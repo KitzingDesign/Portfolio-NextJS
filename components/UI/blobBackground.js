@@ -1,13 +1,17 @@
 import styles from "./blobBackground.module.css";
+import Image from "next/image";
 
 const BlobBackground = () => {
 	return (
 		<div className={styles.containerV2}>
-			<img
-				className={styles.profilImg}
-				src="/Startbild.svg"
-				alt="Jakob Kitzing"
-			/>
+			<div className={styles.profilImg}>
+				<Image
+					src="/Startbild.svg"
+					width={1000}
+					height={1000}
+					alt="Jakob Kitzing"
+				/>
+			</div>
 			<div
 				className={styles.shapeBlob}
 				style={{
