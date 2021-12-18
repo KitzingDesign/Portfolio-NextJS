@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { MenuOutline, CloseOutline } from "react-ionicons";
+import Image from "next/image";
 
 import styles from "./Navigation.module.css";
 
@@ -36,15 +37,16 @@ const Nav = () => {
 	return (
 		<nav className={scrolled ? styles.sticky : styles.unSticky}>
 			<div className={styles.container}>
-				<Link href="/">
-					<img
-						src="/Nav-logo.svg"
+				<Link href="/" passHref={true}>
+					<div
 						className={
 							menu
-								? `${styles.containerAnimationIn} `
-								: `${styles.containerAnimationOut} `
+								? `${styles.containerAnimationIn} ${styles.img}`
+								: `${styles.containerAnimationOut} ${styles.img}`
 						}
-					/>
+					>
+						<Image width={100} height={100} src="/Nav-logo.svg" />
+					</div>
 				</Link>
 				<nav
 					className={
@@ -54,12 +56,12 @@ const Nav = () => {
 					}
 				>
 					<ul>
-						<Link href="/">
+						<Link href="/" passHref={true}>
 							<p className={styles.link} onClick={() => handleMenu()}>
 								PROJECTS
 							</p>
 						</Link>
-						<Link href="/about">
+						<Link href="/about" passHref={true}>
 							<p className={styles.link} onClick={() => handleMenu()}>
 								ABOUT
 							</p>
