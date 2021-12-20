@@ -25,7 +25,7 @@ const DigiHeader = () => {
 			<div className={styles.kryImg}>
 				<div className={styles.kryImgContainer}>
 					<div className={styles.phone}>
-						<Image width={950} height={1700} src="/Phone.png" />
+						<Image width={950} height={1700} src="/Phone.png" alt="Iphone" />
 					</div>
 					<div className={styles.swipes}>
 						<Swiper

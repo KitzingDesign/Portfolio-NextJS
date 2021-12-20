@@ -1,4 +1,5 @@
 import styles from "./bilResults.module.css";
+import Image from "next/image";
 
 const BilResults = () => {
 	return (
@@ -16,8 +17,18 @@ const BilResults = () => {
 				</p>
 			</div>
 			<div className={styles.grid} data-aos="fade-up">
-				<img src="/bilCompany/grafer-01.svg" />
-				<img src="/bilCompany/grafer-04.svg" />
+				<Image
+					width={1000}
+					height={1000}
+					src="/bilCompany/grafer-01.svg"
+					alt="graf"
+				/>
+				<Image
+					width={1000}
+					height={1000}
+					src="/bilCompany/grafer-04.svg"
+					alt="graf"
+				/>
 			</div>
 			<div className={styles.text} data-aos="fade-up">
 				<h3 data-aos="fade-up">Total tid orginal vs prototyp</h3>
@@ -32,8 +43,18 @@ const BilResults = () => {
 				</p>
 			</div>
 			<div className={styles.grid} data-aos="fade-up">
-				<img src="/bilCompany/grafer-02.svg" />
-				<img src="/bilCompany/grafer-03.svg" />
+				<Image
+					width={1000}
+					height={1000}
+					src="/bilCompany/grafer-02.svg"
+					alt="graf"
+				/>
+				<Image
+					width={1000}
+					height={1000}
+					src="/bilCompany/grafer-03.svg"
+					alt="graf"
+				/>
 			</div>
 		</div>
 	);

@@ -1,4 +1,5 @@
 import styles from "./kandidatarbeteSmalter.module.css";
+import Image from "next/image";
 
 const KandidatarbeteBakgrund = () => {
 	return (
@@ -14,11 +15,16 @@ const KandidatarbeteBakgrund = () => {
 				</p>
 			</div>
 			<div className={styles.imgContainer} data-aos="fade-up">
-				<img
-					className={styles.gifContainer}
-					src={`Smalter-gif-smal.gif`}
-					alt="Time Line"
-				/>
+				<div className={styles.gifContainer}>
+					<Image
+						width="100%"
+						height="200%"
+						layout="responsive"
+						objectFit="contain"
+						src={`/Smalter-gif-smal.gif`}
+						alt="Melter"
+					/>
+				</div>
 			</div>
 		</div>
 	);

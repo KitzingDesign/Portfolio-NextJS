@@ -30,7 +30,7 @@
 	position: relative;
 }
 
-.imgContainer img {
+.img {
 	width: 100vw;
 }
 .imgContainer img:hover {
@@ -77,11 +77,14 @@
 	grid-template-columns: 1fr 1fr;
 	gap: 2.4rem;
 }
+.imgStyr {
+	width: 100%;
+}
 
 .kollage {
 	padding-top: 1.6rem;
 	margin: 0 auto;
-	width: 60%;
+	width: 70vw;
 }
 
 .kollageContainer {
@@ -99,7 +102,6 @@
 
 @media (max-width: 75em) {
 	.kollage {
-		width: 90%;
 	}
 	.frame h1 {
 		font-size: 6.4rem;

@@ -1,4 +1,5 @@
 import styles from "./hertzOld.module.css";
+import Image from "next/image";
 
 // import Swiper core and required modules
 import SwiperCore, { Navigation, Pagination } from "swiper";
@@ -10,7 +11,6 @@ SwiperCore.use([Pagination, Navigation]);
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { style } from "dom-helpers";
 
 const HertzOld = () => {
 	return (
@@ -42,8 +42,11 @@ const HertzOld = () => {
 				>
 					<SwiperSlide>
 						<div>
-							<img
-								className={styles.imgContainer}
+							<Image
+								width="100%"
+								height="60%"
+								layout="responsive"
+								objectFit="contain"
 								src="/Car-rental/HertzOld-1.png"
 								alt="Homepage Old Site"
 							/>
@@ -51,8 +54,11 @@ const HertzOld = () => {
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<img
-							className={styles.imgContainer}
+						<Image
+							width="100%"
+							height="60%"
+							layout="responsive"
+							objectFit="contain"
 							src="/Car-rental/HertzOld-2.png"
 							alt="Rentalpage Old Site"
 						/>
@@ -61,16 +67,22 @@ const HertzOld = () => {
 						</p>
 					</SwiperSlide>
 					<SwiperSlide>
-						<img
-							className={styles.imgContainer}
+						<Image
+							width="100%"
+							height="60%"
+							layout="responsive"
+							objectFit="contain"
 							src="/Car-rental/HertzOld-3.png"
 							alt="Choose Car Page Old Site"
 						/>
 						<p className={styles.descriptionImg}>Val av Bil</p>
 					</SwiperSlide>
 					<SwiperSlide>
-						<img
-							className={styles.imgContainer}
+						<Image
+							width="100%"
+							height="60%"
+							layout="responsive"
+							objectFit="contain"
 							src="/Car-rental/HertzOld-4.png"
 							alt="Payment Page Old Site"
 						/>

@@ -7,6 +7,7 @@ import SolutionOne from "./sections/solutionOne";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import Kollage from "./sections/kollage";
+import Image from "next/image";
 
 const KandidatarbeteSlutkocept = () => {
 	return (
@@ -24,7 +25,16 @@ const KandidatarbeteSlutkocept = () => {
 					</p>
 				</div>
 				<div className={styles.imgContainer}>
-					<img src="/Kandidat/hero-bild.png" alt="The Arc" />
+					<div className={styles.img}>
+						<Image
+							width="100%"
+							height="56%"
+							layout="responsive"
+							objectFit="contain"
+							src="/Kandidat/hero-bild.png"
+							alt="The Arc"
+						/>
+					</div>
 
 					<div className={styles.frame}>
 						<h1>The Arc</h1>
@@ -86,18 +96,28 @@ const KandidatarbeteSlutkocept = () => {
 				</p>
 				<div className={styles.styrContainer} data-aos="fade-up">
 					<Zoom>
-						<img
-							src={"/Kandidat/solutions/styr-view.jpg"}
-							style={{ width: "100%" }}
-							alt="controls"
-						></img>
+						<div className={styles.imgStyr}>
+							<Image
+								width="100%"
+								height="60%"
+								layout="responsive"
+								objectFit="contain"
+								src={"/Kandidat/solutions/styr-view.jpg"}
+								alt="controls"
+							/>
+						</div>
 					</Zoom>
 					<Zoom>
-						<img
-							src={"/Kandidat/solutions/styrbord-view.jpg"}
-							style={{ width: "100%" }}
-							alt="Controls placing"
-						></img>
+						<div className={styles.imgStyr}>
+							<Image
+								width="100%"
+								height="60%"
+								layout="responsive"
+								objectFit="contain"
+								src={"/Kandidat/solutions/styrbord-view.jpg"}
+								alt="Controls placing"
+							/>
+						</div>
 					</Zoom>
 				</div>
 			</div>

@@ -50,8 +50,8 @@ p: 1.6rem
 	justify-content: center;
 }
 
-.img img {
-	width: 40%;
+.imgContainer {
+	width: 140%;
 }
 
 .animation {
@@ -100,7 +100,7 @@ p: 1.6rem
 	.greenContent {
 		width: 70%;
 	}
-	.img img {
+	.imgContainer {
 		display: none;
 	}
 }

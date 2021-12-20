@@ -1,4 +1,5 @@
 import styles from "./hertzHeader.module.css";
+import Image from "next/image";
 
 const HertzHeader = () => {
 	return (
@@ -13,7 +14,14 @@ const HertzHeader = () => {
 				</h2>
 			</div>
 			<div className={styles.headImg}>
-				<img src="/Car-rental/heartzHeader.jpg" />
+				<Image
+					width="100%"
+					height="100%"
+					layout="responsive"
+					objectFit="contain"
+					src="/Car-rental/heartzHeader.jpg"
+					alt="Mockup on computer screen"
+				/>
 				{/* <img src="/Macbook-mockup-hertz.jpg" /> */}
 				<h2>01</h2>
 			</div>

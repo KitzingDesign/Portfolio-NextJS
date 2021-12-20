@@ -14,8 +14,8 @@
 	position: relative;
 }
 
-.headImg Img {
-	width: 100%;
+.headImg {
+	width: 170%;
 }
 .headImg h2 {
 	position: absolute;

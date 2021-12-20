@@ -2,6 +2,7 @@ import Divider from "../UI/divider";
 import TextcontainerKand from "../UI/textcontainerKand";
 import styles from "./kandidatarbeteProblem.module.css";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 const KandidatarbeteProblem = () => {
 	const [ref, isVisible] = useInView({
@@ -58,7 +59,16 @@ const KandidatarbeteProblem = () => {
 				</div>
 			</div>
 			<div className={isVisible ? `${styles.img} ${styles.fade}` : styles.img}>
-				<img src="/Kandidat/TODO.png" />
+				<div className={styles.imgContainer}>
+					<Image
+						width="100%"
+						height="100%"
+						layout="responsive"
+						objectFit="contain"
+						src="/Kandidat/TODO.png"
+						alt="To Do List"
+					/>
+				</div>
 			</div>
 		</div>
 	);

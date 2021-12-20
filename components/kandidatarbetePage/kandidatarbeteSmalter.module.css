@@ -22,7 +22,7 @@
 
 .gifContainer {
 	width: 100%;
-	transform: translate(3.2rem);
+	/* transform: translate(3.2rem); */
 }
 
 @media (max-width: 59em) {

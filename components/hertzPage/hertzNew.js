@@ -1,4 +1,5 @@
 import styles from "./hertzNew.module.css";
+import Image from "next/image";
 
 import SwiperCore, { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -36,21 +37,25 @@ const HertzNew = () => {
 					}}
 					slidesPerView={"auto"}
 					navigation={true}
-					className={styles.swiperButtonNext}
+					className={styles.imgContainer}
 				>
 					<SwiperSlide>
-						<div>
-							<img
-								className={styles.imgContainer}
-								src="/Car-rental/HertzNew-1.png"
-								alt="HomePage New"
-							/>
-							<p className={styles.descriptionImg}>Startsida</p>
-						</div>
+						<Image
+							width="100%"
+							height="60%"
+							layout="responsive"
+							objectFit="contain"
+							src="/Car-rental/HertzNew-1.png"
+							alt="HomePage New"
+						/>
+						<p className={styles.descriptionImg}>Startsida</p>
 					</SwiperSlide>
 					<SwiperSlide>
-						<img
-							className={styles.imgContainer}
+						<Image
+							width="100%"
+							height="60%"
+							layout="responsive"
+							objectFit="contain"
 							src="/Car-rental/HertzNew-2.png"
 							alt="RentalPage New"
 						/>
@@ -59,16 +64,22 @@ const HertzNew = () => {
 						</p>
 					</SwiperSlide>
 					<SwiperSlide>
-						<img
-							className={styles.imgContainer}
+						<Image
+							width="100%"
+							height="60%"
+							layout="responsive"
+							objectFit="contain"
 							src="/Car-rental/HertzNew-3.png"
 							alt="Choose Car Page New"
 						/>
 						<p className={styles.descriptionImg}>Val av Bil</p>
 					</SwiperSlide>
 					<SwiperSlide>
-						<img
-							className={styles.imgContainer}
+						<Image
+							width="100%"
+							height="60%"
+							layout="responsive"
+							objectFit="contain"
 							src="/Car-rental/HertzNew-4.png"
 							alt="Payment Page New"
 						/>

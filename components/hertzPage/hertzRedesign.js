@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import styles from "./hertzRedesign.module.css";
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+import Image from "next/image";
 
 const HertzRedesign = () => {
 	const [ref, isVisible] = useInView({
@@ -11,20 +11,32 @@ const HertzRedesign = () => {
 
 	return (
 		<div className={styles.container}>
-			<img
+			<div
 				className={
 					isVisible ? `${styles.carSvg} ${styles.animation}` : styles.carSvg
 				}
-				src="/Car-rental/car.svg"
-				alt="Tiny Car"
-				id="car"
 				ref={ref}
-			/>
-			<img
-				className={styles.profilImg}
-				src="/Car-rental/redesign.svg"
-				alt="Redesign Header"
-			/>
+			>
+				<Image
+					width={1000}
+					height={800}
+					layout="responsive"
+					objectFit="contain"
+					src="/Car-rental/car.svg"
+					alt="Tiny Car"
+					id="car"
+				/>
+			</div>
+			<div className={styles.profilImg}>
+				<Image
+					width="100%"
+					height="28%"
+					layout="responsive"
+					objectFit="contain"
+					src="/Car-rental/redesign.svg"
+					alt="Redesign Header"
+				/>
+			</div>
 		</div>
 	);
 };

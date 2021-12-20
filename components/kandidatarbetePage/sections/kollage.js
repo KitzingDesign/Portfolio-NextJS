@@ -2,74 +2,120 @@ import styles from "./kollage.module.css";
 
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+import Image from "next/image";
 
 const Kollage = () => {
 	return (
 		<div className={styles.container}>
 			<Zoom>
-				<img
-					src={"/Kandidat/solutions/kollage/bild-1.jpg"}
-					style={{ width: "100%" }}
-					alt="prototyping"
-				></img>{" "}
+				<div className={styles.imgContainer}>
+					<Image
+						width="100%"
+						height="100%"
+						layout="responsive"
+						objectFit="contain"
+						src={"/Kandidat/solutions/kollage/bild-1.jpg"}
+						alt="prototyping"
+					></Image>
+				</div>
 			</Zoom>
 			<div className={styles.hide}>
 				<Zoom>
-					<img
-						src={"/Kandidat/solutions/kollage/bild-2.jpg"}
-						style={{ width: "100%" }}
-						alt="prototyping"
-					></img>{" "}
+					<div className={`${styles.imgContainer} `}>
+						<Image
+							width="100%"
+							height="100%"
+							layout="responsive"
+							objectFit="contain"
+							src={"/Kandidat/solutions/kollage/bild-2.jpg"}
+							alt="prototyping"
+						></Image>
+					</div>
 				</Zoom>
 			</div>
 			<Zoom>
-				<img
-					src={"/Kandidat/solutions/kollage/bild-3.jpg"}
-					style={{ width: "100%" }}
-					alt="prototyping"
-				></img>{" "}
+				<div className={styles.imgContainer}>
+					<Image
+						width="100%"
+						height="100%"
+						layout="responsive"
+						objectFit="contain"
+						src={"/Kandidat/solutions/kollage/bild-3.jpg"}
+						alt="prototyping"
+					></Image>{" "}
+				</div>
 			</Zoom>
 			<Zoom>
-				<img
-					src={"/Kandidat/solutions/kollage/bild-4.jpg"}
-					style={{ width: "100%" }}
-					alt="Surounding"
-				></img>{" "}
+				<div className={styles.imgContainer}>
+					<Image
+						width="100%"
+						height="100%"
+						layout="responsive"
+						objectFit="contain"
+						src={"/Kandidat/solutions/kollage/bild-4.jpg"}
+						alt="Surounding"
+					></Image>{" "}
+				</div>
 			</Zoom>
 			<Zoom>
-				<img
-					src={"/Kandidat/solutions/kollage/bild-5.jpg"}
-					style={{ width: "100%" }}
-					alt="Surounding"
-				></img>{" "}
+				<div className={styles.imgContainer}>
+					<Image
+						width="100%"
+						height="100%"
+						layout="responsive"
+						objectFit="contain"
+						src={"/Kandidat/solutions/kollage/bild-5.jpg"}
+						alt="Surounding"
+					></Image>{" "}
+				</div>
 			</Zoom>
 			<Zoom>
-				<img
-					src={"/Kandidat/solutions/kollage/bild-6.jpg"}
-					style={{ width: "100%" }}
-					alt="Surounding"
-				></img>{" "}
+				<div className={styles.imgContainer}>
+					<Image
+						width="100%"
+						height="100%"
+						layout="responsive"
+						objectFit="contain"
+						src={"/Kandidat/solutions/kollage/bild-6.jpg"}
+						alt="Surounding"
+					></Image>{" "}
+				</div>
 			</Zoom>
 			<Zoom>
-				<img
-					src={"/Kandidat/solutions/kollage/bild-7.jpg"}
-					style={{ width: "100%" }}
-					alt="Concept"
-				></img>{" "}
+				<div className={styles.imgContainer}>
+					<Image
+						width="100%"
+						height="100%"
+						layout="responsive"
+						objectFit="contain"
+						src={"/Kandidat/solutions/kollage/bild-7.jpg"}
+						alt="Concept"
+					></Image>{" "}
+				</div>
 			</Zoom>
 			<Zoom>
-				<img
-					src={"/Kandidat/solutions/kollage/bild-8.jpg"}
-					style={{ width: "100%" }}
-					alt="Concept"
-				></img>{" "}
+				<div className={styles.imgContainer}>
+					<Image
+						width="100%"
+						height="100%"
+						layout="responsive"
+						objectFit="contain"
+						src={"/Kandidat/solutions/kollage/bild-8.jpg"}
+						alt="Concept"
+					></Image>{" "}
+				</div>
 			</Zoom>
 			<Zoom>
-				<img
-					src={"/Kandidat/solutions/kollage/bild-9.jpg"}
-					style={{ width: "100%" }}
-					alt="Concept"
-				></img>{" "}
+				<div className={styles.imgContainer}>
+					<Image
+						width="100%"
+						height="100%"
+						layout="responsive"
+						objectFit="contain"
+						src={"/Kandidat/solutions/kollage/bild-9.jpg"}
+						alt="Concept"
+					></Image>{" "}
+				</div>
 			</Zoom>
 		</div>
 	);

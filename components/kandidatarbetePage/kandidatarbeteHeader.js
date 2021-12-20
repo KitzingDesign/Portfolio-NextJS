@@ -1,4 +1,5 @@
 import styles from "./kandidatarbeteHeader.module.css";
+import Image from "next/image";
 
 const KandidatarbeteHeader = () => {
 	return (
@@ -13,7 +14,14 @@ const KandidatarbeteHeader = () => {
 				</h1>
 			</div>
 			<div className={styles.headImg}>
-				<img src="/headerKandidatpng.png" alt="Six Computer Screens" />
+				<Image
+					width="100%"
+					height="100%"
+					layout="responsive"
+					objectFit="contain"
+					src="/headerKandidatpng.png"
+					alt="Six Computer Screens"
+				/>
 				{/* <img src="/Macbook-mockup-hertz.jpg" /> */}
 				<h2 className={styles.nr}>02</h2>
 			</div>
