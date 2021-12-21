@@ -15,6 +15,7 @@ const ProsexKollage = () => {
 						layout="responsive"
 						objectFit="contain"
 						src="/prosex/stripes-2-02.svg"
+						alt="background stripes"
 					></Image>
 				</div>
 			</div>

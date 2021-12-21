@@ -3,9 +3,10 @@
 	margin: 0 auto;
 }
 
-.container img {
+.imgContainer {
 	width: 100%;
 	border: solid 0.5rem white;
+	background-color: white;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 

@@ -59,7 +59,7 @@ const KrySection = (props) => {
 					</div>
 				</div>
 				<div className={styles.link}>
-					<Link href="/digitalisering">
+					<Link href="/digitalisering" passHref={true}>
 						<div className={styles.projectLink}>
 							<p>Utforska Projektet </p>
 							<ArrowRightIcon className={styles.icon} />

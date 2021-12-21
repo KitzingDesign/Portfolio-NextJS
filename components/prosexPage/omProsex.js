@@ -1,4 +1,5 @@
 import styles from "./omProsex.module.css";
+import Image from "next/image";
 
 const OmProsex = () => {
 	return (
@@ -12,7 +13,17 @@ const OmProsex = () => {
 				men även inom adobe programmen. och som alla redan vet är det ju pr-en
 				som är det viktigaste.
 			</p>
-			<img src="/prosex/rummet-bild.jpg" data-aos="fade-up"></img>
+			<div className={styles.imgContainer}>
+				<Image
+					width="101%"
+					height="63%"
+					layout="responsive"
+					objectFit="contain"
+					src="/prosex/rummet-bild.jpg"
+					alt="prosex.19"
+					data-aos="fade-up"
+				></Image>
+			</div>
 		</div>
 	);
 };
