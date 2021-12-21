@@ -35,7 +35,6 @@ const HertzNew = () => {
 					pagination={{
 						clickable: true,
 					}}
-					slidesPerView={"auto"}
 					navigation={true}
 					className={styles.imgContainer}
 				>

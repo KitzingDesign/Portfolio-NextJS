@@ -51,15 +51,7 @@
 	/* filter: grayscale(100%); */
 	filter: brightness(0%);
 	opacity: 50%;
-}
-
-.flexImg img {
-	justify-self: center;
-	width: 10rem;
-}
-
-.flexImg:nth-child(1) img {
-	height: 75%;
+	gap: 6.4rem;
 }
 
 @media (max-width: 59em) {

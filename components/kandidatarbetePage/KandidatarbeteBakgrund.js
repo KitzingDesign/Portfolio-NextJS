@@ -1,5 +1,6 @@
 import Divider from "../UI/divider";
 import styles from "./KandidatarbeteBakgrund.module.css";
+import Image from "next/image";
 
 const KandidatarbeteBakgrund = () => {
 	return (
@@ -38,27 +39,49 @@ const KandidatarbeteBakgrund = () => {
 			<h3 data-aos="fade-up">Collaberation Between</h3>
 			<div data-aos="fade-up">
 				<div className={styles.flexImg}>
-					<img
-						className={styles.imgContainer}
-						src="/kandidat/Chalmers.svg"
-						alt="Chalmers logo"
-					/>
-
-					<img
-						className={styles.imgContainer}
-						src="/kandidat/Boid.svg"
-						alt="Boid logo"
-					/>
-					<img
-						className={styles.imgContainer}
-						src="/kandidat/Vargön.svg"
-						alt="Vargön Alloys logo"
-					/>
-					<img
-						className={styles.imgContainer}
-						src="/kandidat/Guard.svg"
-						alt="Guard logo"
-					/>
+					<div className={styles.imgContainer}>
+						<Image
+							width="100%"
+							height="100%"
+							layout="responsive"
+							objectFit="contain"
+							src="/kandidat/Chalmers.svg"
+							alt="Chalmers logo"
+						/>
+					</div>
+					<div className={styles.imgContainer}>
+						<Image
+							width="100%"
+							height="100%"
+							layout="responsive"
+							objectFit="contain"
+							className={styles.imgContainer}
+							src="/kandidat/Boid.svg"
+							alt="Boid logo"
+						/>
+					</div>
+					<div className={styles.imgContainer}>
+						<Image
+							width="100%"
+							height="100%"
+							layout="responsive"
+							objectFit="contain"
+							className={styles.imgContainer}
+							src="/kandidat/Vargön.svg"
+							alt="Vargön Alloys logo"
+						/>
+					</div>
+					<div className={styles.imgContainer}>
+						<Image
+							width="100%"
+							height="100%"
+							layout="responsive"
+							objectFit="contain"
+							className={styles.imgContainer}
+							src="/kandidat/Guard.svg"
+							alt="Guard logo"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
