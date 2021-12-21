@@ -45,7 +45,7 @@ const KandidatarbeteBakgrund = () => {
 							height="100%"
 							layout="responsive"
 							objectFit="contain"
-							src="/kandidat/Chalmers.svg"
+							src="/Kandidat/Chalmers.svg"
 							alt="Chalmers logo"
 						/>
 					</div>
@@ -56,7 +56,7 @@ const KandidatarbeteBakgrund = () => {
 							layout="responsive"
 							objectFit="contain"
 							className={styles.imgContainer}
-							src="/kandidat/Boid.svg"
+							src="/Kandidat/Boid.svg"
 							alt="Boid logo"
 						/>
 					</div>
@@ -67,7 +67,7 @@ const KandidatarbeteBakgrund = () => {
 							layout="responsive"
 							objectFit="contain"
 							className={styles.imgContainer}
-							src="/kandidat/Vargön.svg"
+							src="/Kandidat/Vargön.svg"
 							alt="Vargön Alloys logo"
 						/>
 					</div>
@@ -78,7 +78,7 @@ const KandidatarbeteBakgrund = () => {
 							layout="responsive"
 							objectFit="contain"
 							className={styles.imgContainer}
-							src="/kandidat/Guard.svg"
+							src="/Kandidat/Guard.svg"
 							alt="Guard logo"
 						/>
 					</div>

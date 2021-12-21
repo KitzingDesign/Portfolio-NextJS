@@ -31,7 +31,7 @@ const KandidatarbeteSlutkocept = () => {
 							height="56%"
 							layout="responsive"
 							objectFit="contain"
-							src="/Kandidat/hero-bild.png"
+							src="/Kandidat/Hero-bild.png"
 							alt="The Arc"
 						/>
 					</div>

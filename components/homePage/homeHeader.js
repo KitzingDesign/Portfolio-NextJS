@@ -10,27 +10,25 @@ const text = "UX/UI.";
 
 const HomeHeader = () => {
 	return (
-		<div id="Header">
-			<div className={styles.container}>
-				<div className={styles.headerElement}>
-					<div className={styles.headerText}>
-						<h1>Jakob </h1>
+		<div className={styles.container}>
+			<div className={styles.headerElement}>
+				<div className={styles.headerText}>
+					<h1>Jakob </h1>
 
-						<TextLoop />
+					<TextLoop />
 
-						<p>
-							En produktdesigner med huvudfokus på digitala produkter och UX/UI.
-							Min filosofi och det jag genuint brinner för är att utveckla
-							kreativa produkter och tjänster där användaren alltid står i
-							centrum.
-						</p>
-						<Link href="/about">
-							<a className={styles.btn}>Mer om mig</a>
-						</Link>
-					</div>
-					<div className={styles.headerImg}>
-						<BlobBackground />
-					</div>
+					<p>
+						En produktdesigner med huvudfokus på digitala produkter och UX/UI.
+						Min filosofi och det jag genuint brinner för är att utveckla
+						kreativa produkter och tjänster där användaren alltid står i
+						centrum.
+					</p>
+					<Link href="/about">
+						<a className={styles.btn}>Mer om mig</a>
+					</Link>
+				</div>
+				<div className={styles.headerImg}>
+					<BlobBackground />
 				</div>
 			</div>
 		</div>
