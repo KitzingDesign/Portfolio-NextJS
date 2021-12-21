@@ -5,7 +5,7 @@ const OmProsex = () => {
 	return (
 		<div className={styles.container}>
 			<h2 data-aos="fade-up">Vad är prosex.?</h2>
-			<p data-aos="fade-up">
+			<p data-aos="fade-up" className={styles.containerP}>
 				prosex. är teknisk designs sexmästeri och pr-förening. 2019-2020 satt
 				jag som pr-ansvarig i prosex. med det härliga gänget ni kan se nedan.
 				Under året lärde jag mig sig otrolig mycket, både utav att arbeta i en
