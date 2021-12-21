@@ -14,7 +14,7 @@ const HomeHeader = () => {
 			<div className={styles.container}>
 				<div className={styles.headerElement}>
 					<div className={styles.headerText}>
-						<h1>Jakob Kitzing</h1>
+						<h1>Jakob </h1>
 
 						<TextLoop />
 
