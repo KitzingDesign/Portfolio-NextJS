@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
-const WT = (OriginalComponent) => {
-	const WithTransition = () => {
+const WithTransition = (OriginalComponent) => {
+	const WT = () => {
 		return (
 			<div>
 				<OriginalComponent />
@@ -28,7 +28,7 @@ const WT = (OriginalComponent) => {
 			</div>
 		);
 	};
-	WithTransition.displayName = "WithTransition";
-	return WithTransition;
+	WT.displayName = "WithTransition";
+	return WT;
 };
-export default WT;
+export default WithTransition;
