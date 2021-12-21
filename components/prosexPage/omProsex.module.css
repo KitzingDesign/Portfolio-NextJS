@@ -4,7 +4,7 @@
 }
 
 .imgContainer {
-	width: 100%;
+	width: 70vw;
 	border: solid 0.5rem white;
 	background-color: white;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -17,6 +17,9 @@
 
 @media (max-width: 25em) {
 	.container {
+		width: 85vw;
+	}
+	.imgContainer {
 		width: 85vw;
 	}
 }
