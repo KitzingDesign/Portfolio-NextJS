@@ -5,6 +5,7 @@ import OmProsex from "../../components/prosexPage/omProsex";
 import ProsexKollage from "../../components/prosexPage/prosexKollage";
 import Footer from "../../components/Layout/footer";
 import AOS from "aos";
+import Head from "next/head";
 
 const ProsexPage = () => {
 	useEffect(() => {
@@ -12,6 +13,10 @@ const ProsexPage = () => {
 	}, []);
 	return (
 		<Fragment>
+			<Head>
+				<title>prosex.</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			</Head>
 			<ProsexHeader />
 			<OmProsex />
 			<ProsexKollage />

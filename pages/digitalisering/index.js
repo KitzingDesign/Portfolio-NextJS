@@ -7,6 +7,7 @@ import WithTransition from "../../components/HOC/withTransition";
 
 import AOS from "aos";
 import Footer from "../../components/Layout/footer";
+import Head from "next/head";
 
 const KryPage = () => {
 	useEffect(() => {
@@ -14,6 +15,10 @@ const KryPage = () => {
 	}, []);
 	return (
 		<Fragment>
+			<Head>
+				<title>Digitalisering</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			</Head>
 			<DigiHeader />
 
 			<DigiBakgrund />

@@ -21,6 +21,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import Navigation from "../components/Layout/Navigation";
 import TextLoop from "../components/UI/textLoop";
 import Nav from "../components/Layout/Navigation";
+import Head from "next/head";
 
 const anchors = ["firstPage", "2", "thirdPage", "fourthPage", "fifthPage"];
 let fadeS1,
@@ -30,6 +31,10 @@ let fadeS1,
 
 const HomePage = () => (
 	<div>
+		<Head>
+			<title>Projects</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		</Head>
 		<ReactFullpage
 			licenseKey="21BAFFA2-6D8141A7-AAF0A8AC-A0B24480"
 			anchors={anchors}

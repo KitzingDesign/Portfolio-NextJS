@@ -11,6 +11,7 @@ import Footer from "../../components/Layout/footer";
 import styles from "./index.module.css";
 import AOS from "aos";
 import { useInView } from "react-intersection-observer";
+import Head from "next/head";
 
 const KandidatarbetePage = () => {
 	useEffect(() => {
@@ -19,6 +20,10 @@ const KandidatarbetePage = () => {
 
 	return (
 		<div className={styles.styles}>
+			<Head>
+				<title>Kontrollrum</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			</Head>
 			<KandidatarbeteHeader />
 			<KandidatarbeteBakgrund />
 			<KandidatarbeteProblem />

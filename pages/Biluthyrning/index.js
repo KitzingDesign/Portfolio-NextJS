@@ -11,6 +11,7 @@ import withTransition from "../../components/HOC/withTransition";
 import BilResults from "../../components/hertzPage/bilResults";
 import Footer from "../../components/Layout/footer";
 import AOS from "aos";
+import Head from "next/head";
 
 const HertzPage = () => {
 	useEffect(() => {
@@ -18,6 +19,10 @@ const HertzPage = () => {
 	}, []);
 	return (
 		<Fragment>
+			<Head>
+				<title>Car Rental</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			</Head>
 			<p className={styles.sticky}>
 				Usability - Teknisk Design Chalmers - 2020
 			</p>

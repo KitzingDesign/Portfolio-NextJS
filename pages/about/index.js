@@ -7,6 +7,7 @@ import WithTransition from "../../components/HOC/withTransition";
 import AOS from "aos";
 
 import Footer from "../../components/Layout/footer";
+import Head from "next/head";
 
 const AboutPage = () => {
 	useEffect(() => {
@@ -14,6 +15,10 @@ const AboutPage = () => {
 	}, []);
 	return (
 		<Fragment>
+			<Head>
+				<title>About</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			</Head>
 			<AboutHeader />
 			<AboutContent />
 			<Footer />
