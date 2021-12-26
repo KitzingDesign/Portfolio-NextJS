@@ -1,7 +1,7 @@
-import { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import Typist from "react-typist";
 
-import Typical from "react-typical";
+import ReactRotatingText from "react-rotating-text";
 
 const TextLoop = () => {
 	// const [count, setCount] = useState(1);
@@ -14,20 +14,17 @@ const TextLoop = () => {
 
 	return (
 		<Fragment>
-			<Typical
-				loop={Infinity}
-				wrapper="h1"
-				steps={[
-					"UX-Designer",
-					1000,
-					"UI-Designer",
-					1000,
-					"Product Designer",
-					1000,
-					"Frontend Developer",
-					1000,
-				]}
-			/>
+			<h1>
+				<ReactRotatingText
+					typingInterval={50}
+					items={[
+						"UX-Designer",
+						"UI-Designer",
+						"Product Designer",
+						"Frontend Developer",
+					]}
+				/>
+			</h1>
 			{/* <p>Loop Text can be written bellow</p>
 			{count ? (
 				<Typist avgTypingDelay={50} onTypingDone={() => setCount(0)}>

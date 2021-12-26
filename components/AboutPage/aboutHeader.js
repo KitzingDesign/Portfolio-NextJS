@@ -1,18 +1,17 @@
 import styles from "./aboutHeader.module.css";
 import Image from "next/image";
 
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 
 const AboutHeader = () => {
 	return (
 		<div className={`${styles.container} `}>
 			<Tilt
-				options={{ max: 20, perspective: 1000, reverse: true }}
+				options={{ max: 20, perspective: 1000 }}
 				className={styles.parent}
+				tiltReverse={true}
 			>
-				<div className={styles.underImg}>
-					<p>About me</p>
-				</div>
+				<div className={styles.underImg}></div>
 				<div className={styles.child}>
 					<Image
 						width={1000}
