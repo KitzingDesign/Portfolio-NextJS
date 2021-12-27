@@ -21,12 +21,10 @@ const ProsexSection = (props) => {
 			>
 				<h2>prosex.</h2>
 				<p className={styles.text}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
-					ligula et ex elementum lacinia non id metus. In ac est ante. Proin at
-					lacus quam. Fusce gravida varius venenatis. Aliquam orci magna,
-					pharetra ut ultrices eu, euismod vel augue. Etiam tempor, risus ut
-					viverra tincidunt, orci ante vehicula quam, a hendrerit orci odio
-					eleifend nisi.
+					2019-2020 satt jag som pr-ansvarig i teknisk designs pr och
+					sexmästeri. Det var både väldigt lärorikt att jobba i en så tight
+					grupp, samt att jag lärde mig väldigt mycket kring adobe suite och
+					grafisk design.
 				</p>
 				<ProjectLink link="/prosex-page" />
 			</div>

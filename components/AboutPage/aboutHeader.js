@@ -16,6 +16,7 @@ const AboutHeader = () => {
 					<Image
 						width={1000}
 						height={1000}
+						layout="responsive"
 						src="/Startbild.svg"
 						alt="Jakob Kitzing"
 					/>

@@ -33,12 +33,10 @@ const KandidatarbeteSection = (props) => {
 			>
 				<h2>Kandidatarbete</h2>
 				<p className={styles.text}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
-					ligula et ex elementum lacinia non id metus. In ac est ante. Proin at
-					lacus quam. Fusce gravida varius venenatis. Aliquam orci magna,
-					pharetra ut ultrices eu, euismod vel augue. Etiam tempor, risus ut
-					viverra tincidunt, orci ante vehicula quam, a hendrerit orci odio
-					eleifend nisi.
+					Som kandidatarbete fick min grupp som uppdrag tillsammans med
+					designföretaget Boid att utveckla framtidens kontrollrum åt
+					legeringsverket Vagrön Alloys. Vår del i arbetet var att framställa
+					den nya arbetsplatsen till personen som styr ugnarna.
 				</p>
 				<ProjectLink
 					link="kandidatarbete-page"

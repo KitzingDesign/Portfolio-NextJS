@@ -19,10 +19,10 @@ const HertzSection = (props) => {
 			>
 				<h2>Biluthyrning</h2>
 				<p className={styles.text}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis
-					ligula et ex elementum lacinia non id metus. In ac est ante. Proin at
-					lacus quam. Fusce gravida varius venenatis. Aliquam orci magna,
-					pharetra ut ultrices eu, euismod vel augue.
+					Att känna frustration när man ska använda en hemsida är något som kan
+					skapa en negativ bild av hela varumärket. Jag och några kursare hade
+					som arbete att förbättra en biluthyrningshemsida ur ett usability
+					perspektiv, för att just slippa denna frustration.
 				</p>
 				<ProjectLink link="/Biluthyrning" />
 			</div>
