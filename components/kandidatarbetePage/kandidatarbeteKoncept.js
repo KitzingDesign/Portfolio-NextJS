@@ -17,21 +17,9 @@ const KandidatarbeteKoncept = () => {
 				från den tidigare idéskapandet. Dessa går att se nedan.
 			</p>
 			<div className={styles.koncepts} data-aos="fade-up">
-				<Koncept
-					titel="Koncept A"
-					text="nananana"
-					img="/Kandidat/konceptA.jpg"
-				/>
-				<Koncept
-					titel="Koncept B"
-					text="nananana"
-					img="/Kandidat/konceptB.jpg"
-				/>
-				<Koncept
-					titel="Koncept C"
-					text="nananana"
-					img="/Kandidat/konceptC.jpg"
-				/>
+				<Koncept titel="Koncept A" img="/Kandidat/KonceptA.jpg" />
+				<Koncept titel="Koncept B" img="/Kandidat/KonceptB.jpg" />
+				<Koncept titel="Koncept C" img="/Kandidat/KonceptC.jpg" />
 			</div>
 		</div>
 	);

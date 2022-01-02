@@ -44,10 +44,10 @@ const KandidatarbeteSlutkocept = () => {
 					titel="Smutshantering"
 					divider="dividerR"
 					urlFirst="above-view"
-					firstTitel="Avgränsning"
-					firstText="Bardisk"
+					firstTitel="Layout"
+					firstText="Layouten av arbetsplatsen är uppbyggd i två sektioner med fyra arbetsplatser i varje. Detta för att främja kommunikationen mellan smältarna samtidigt som det möjliggör en lugn miljö. Den segregerade platsen i kontrollrummet och det minskade stimmet kommer i sin tur leda till att mindre smuts om damm dras in."
 					urlSecond="bar-view"
-					secondTitel="då"
+					secondTitel="Bardisk"
 					secondText="då"
 					alt="Smutshantering"
 				/>

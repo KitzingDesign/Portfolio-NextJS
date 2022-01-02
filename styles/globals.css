@@ -93,6 +93,14 @@ h2 {
 	background-color: #000 !important;
 }
 
+.slide {
+	position: absolute;
+	z-index: 10;
+	height: 100vh;
+	width: 100%;
+	background: white;
+}
+
 .slide-in {
 	position: absolute;
 	z-index: 10;

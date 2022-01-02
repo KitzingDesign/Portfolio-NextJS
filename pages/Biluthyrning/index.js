@@ -37,4 +37,4 @@ const HertzPage = () => {
 		</Fragment>
 	);
 };
-export default withTransition(HertzPage, "yellow");
+export default HertzPage;

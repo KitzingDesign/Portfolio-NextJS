@@ -34,4 +34,4 @@ const KryPage = () => {
 	);
 };
 
-export default WithTransition(KryPage);
+export default KryPage;

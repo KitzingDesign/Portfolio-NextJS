@@ -7,11 +7,13 @@ const KandidatarbeteBakgrund = () => {
 			<div className={styles.textConatiner} data-aos="fade-up">
 				<h2>Utvärdering</h2>
 				<p>
-					Contrary to popular belief, Lorem Ipsum is not simply random text. It
-					has roots in a piece of classical Latin literature from 45 BC, making
-					it over 2000 years old. Richard McClintock, a Latin professor at
-					Hampden-Sydney College in Virginia, looked up one of the more obscure
-					Latin words, consectetur,
+					De tre koncepten utvärderades av smältarna med en enkät. Där framkom
+					att koncept nummer ett var det konceptet smältarna föredrog.
+					Motiveringarna var att konceptet var öppet, tydligt och proffsigt,
+					hade bra lösning med krokar för dagsförvaring och bra styrbord.
+					Konceptet itererades och flera dellösningar från de andra koncepten
+					implementerades. Allt tillsammans kom till slut att bli{" "}
+					<b>The Arc...</b>
 				</p>
 			</div>
 			<div className={styles.imgContainer} data-aos="fade-up">

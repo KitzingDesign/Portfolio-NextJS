@@ -35,4 +35,4 @@ const KandidatarbetePage = () => {
 	);
 };
 
-export default WithTransition(KandidatarbetePage);
+export default KandidatarbetePage;

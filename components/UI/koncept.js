@@ -6,7 +6,6 @@ const Koncept = (props) => {
 	return (
 		<div className={styles.container}>
 			<h2 className={styles.titel}>{props.titel}</h2>
-			<p>{props.text}</p>
 
 			<Zoom>
 				<div className={styles.img}>
@@ -15,6 +14,7 @@ const Koncept = (props) => {
 						height={700}
 						src={props.img}
 						alt="koncept"
+						loading="eager"
 					></Image>
 				</div>
 			</Zoom>
