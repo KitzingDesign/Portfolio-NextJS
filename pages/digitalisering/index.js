@@ -8,6 +8,7 @@ import WithTransition from "../../components/HOC/withTransition";
 import AOS from "aos";
 import Footer from "../../components/Layout/footer";
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 const KryPage = () => {
 	useEffect(() => {
@@ -30,6 +31,20 @@ const KryPage = () => {
 			<DigiLayoutImageSection img="gyno-stor-logga" />
 			<BoiSection />
 			<Footer />
+			<motion.div
+				className="slide-in"
+				initial={{ scaleX: 0 }}
+				animate={{ scaleX: 0 }}
+				exit={{ scaleX: 1 }}
+				transition={{ duration: 1, ease: "easeInOut" }}
+			/>
+			<motion.div
+				className="slide-out"
+				initial={{ scaleX: 1 }}
+				animate={{ scaleX: 0 }}
+				exit={{ scaleX: 0 }}
+				transition={{ duration: 1, ease: "easeInOut" }}
+			/>
 		</Fragment>
 	);
 };

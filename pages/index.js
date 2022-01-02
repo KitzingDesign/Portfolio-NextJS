@@ -9,6 +9,7 @@ import WithTransition from "../components/HOC/withTransition";
 
 import React, { Fragment, useEffect } from "react";
 import ReactDOM from "react-dom";
+import { motion } from "framer-motion";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -93,9 +94,23 @@ const HomePage = () => (
 				);
 			}}
 		/>
+		<motion.div
+			className="slide-in"
+			initial={{ scaleX: 0 }}
+			animate={{ scaleX: 0 }}
+			exit={{ scaleX: 1 }}
+			transition={{ duration: 1, ease: "easeInOut" }}
+		/>
+		<motion.div
+			className="slide-out"
+			initial={{ scaleX: 1 }}
+			animate={{ scaleX: 0 }}
+			exit={{ scaleX: 0 }}
+			transition={{ duration: 1, ease: "easeInOut" }}
+		/>
 	</div>
 );
-export default WithTransition(HomePage);
+export default HomePage;
 
 {
 	/* <div id="fullpage">
