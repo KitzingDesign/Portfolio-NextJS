@@ -18,8 +18,8 @@ const HomeHeader = () => {
 					<TextLoop />
 
 					<p>
-						En produktdesigner med huvudfokus på digitala produkter och UX/UI.
-						Min filosofi och det jag genuint brinner för är att utveckla
+						Jag är en produktdesigner med huvudfokus på digitala produkter och
+						UX/UI. Min filosofi och det jag genuint brinner för är att utveckla
 						kreativa produkter och tjänster där användaren alltid står i
 						centrum.
 					</p>

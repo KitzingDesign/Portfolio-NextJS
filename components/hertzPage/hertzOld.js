@@ -19,12 +19,12 @@ const HertzOld = () => {
 				<h2 data-aos="fade-up">Befintlig Hemsida</h2>
 				<p data-aos="fade-up">
 					En teoretisk utvärdering av den befintliga hemsidan skapades för att
-					för att konkretisera eventuella problem med hemsidan. Det främsta som
-					framkom var att hemsidan i vissa fall var svår att förstå, den bestod
-					av mycket information som inte ledde användaren framåt i processen,
-					utan snarare gjorde användaren förvirrad. Utifrån den problembilden
-					som skapats gjordes en prototyp av den befintliga hemsidan i adobe XD
-					för att kunna få en jämförbar utvärdering med framtida prototyp för en
+					konkretisera eventuella problem med hemsidan. Det främsta som framkom
+					var att hemsidan i vissa fall var svår att förstå, den bestod av
+					mycket information som inte ledde användaren framåt i processen, utan
+					snarare gjorde användaren förvirrad. Utifrån den problembilden som
+					skapats gjordes en prototyp av den befintliga hemsidan i adobe XD för
+					att kunna få en jämförbar utvärdering med framtida prototyp för en
 					redesign.
 				</p>
 			</div>

@@ -8,12 +8,11 @@ const KandidatarbeteBakgrund = () => {
 				<h2>Utvärdering</h2>
 				<p>
 					De tre koncepten utvärderades av smältarna med en enkät. Där framkom
-					att koncept nummer ett var det konceptet smältarna föredrog.
-					Motiveringarna var att konceptet var öppet, tydligt och proffsigt,
-					hade bra lösning med krokar för dagsförvaring och bra styrbord.
-					Konceptet itererades och flera dellösningar från de andra koncepten
-					implementerades. Allt tillsammans kom till slut att bli{" "}
-					<b>The Arc...</b>
+					att koncept A var det konceptet smältarna föredrog. Motiveringarna var
+					att konceptet var öppet, tydligt, proffsigt, hade bra lösning med
+					krokar för dagsförvaring och ett bra styrbord. Konceptet itererades
+					och flera dellösningar från de andra koncepten implementerades. Allt
+					tillsammans kom till slut att bli <b>The Arc...</b>
 				</p>
 			</div>
 			<div className={styles.imgContainer} data-aos="fade-up">

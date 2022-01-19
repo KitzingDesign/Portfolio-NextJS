@@ -8,10 +8,12 @@ const OmProsex = () => {
 			<p data-aos="fade-up" className={styles.containerP}>
 				prosex. är teknisk designs sexmästeri och pr-förening. 2019-2020 satt
 				jag som pr-ansvarig i prosex. med det härliga gänget ni kan se nedan.
-				Under året lärde jag mig sig otrolig mycket, både utav att arbeta i en
-				så otroligt tight grupp, där det blev många sena nätter och heladagar,
-				men även inom adobe programmen. och som alla redan vet är det ju pr-en
-				som är det viktigaste.
+				Mitt år som sittandes i prosex. var bland det roligaste jag gjort! Att
+				arbeta dag såväl som natt, att lösa problem i stressiga situationer och
+				att alltid försöka få ens arrangemang att bli så bra som möjligt kunde
+				ibland bli lite påfrestande, men att få se ett lyckat evenemang som vi
+				lyckats få ihop gjorde det värt alla dagar i veckan. Ett plus i det hela
+				är att jag även fick utveckla mina kunskaper i adobe suit under tiden.
 			</p>
 			<div className={styles.imgContainer}>
 				<Image

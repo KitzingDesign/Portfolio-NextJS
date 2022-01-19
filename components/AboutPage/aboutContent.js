@@ -119,8 +119,7 @@ const AboutContent = () => {
 				<div className={styles.emailContainer}>
 					<h2>JakobKitzing@gmail.com</h2>
 					<p>
-						Tveka inte på att höra av dig, jag är alltid öppen för att ta en
-						fika!
+						Tveka inte på att höra av dig, jag är alltid öppen för att tjöta!
 					</p>
 				</div>
 			</div>

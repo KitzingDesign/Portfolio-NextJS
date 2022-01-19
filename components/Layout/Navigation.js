@@ -45,12 +45,21 @@ const Nav = () => {
 								: `${styles.containerAnimationOut} ${styles.img}`
 						}
 					>
-						<Image
-							width={100}
-							height={100}
-							src="/Nav-logo.svg"
-							alt="nav logo"
-						/>
+						<svg
+							id="Layer_1"
+							data-name="Layer 1"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 251.78 231.31"
+						>
+							<path
+								d="M89.05.48h43.14V158.25c0,22.36-4.07,44.38-16.37,56.31s-30.24,17.23-49.13,17.23c-23.93,0-65.5-6.31-65.5-61.56l42.2.31c0,13.15,10.49,19.59,22.46,19.59,13,0,23.2-8.25,23.2-24.63Z"
+								transform="translate(-1.19 -0.48)"
+							/>
+							<path
+								d="M129.83,133.54l62-69h52.28l-71.8,80.3L253,231.79H201l-71.17-77.15Z"
+								transform="translate(-1.19 -0.48)"
+							/>
+						</svg>
 					</div>
 				</Link>
 				<nav

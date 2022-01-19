@@ -31,7 +31,7 @@ const KandidatarbeteProblem = () => {
 							För att förstå arbetssituationen som smältare utfördes olika
 							datainsamlingsmetoder som därefter analyserades. De som utfördes
 							var en digital rundvandring, en pilotintervju med en skiftledaren
-							som förut varit smältare, en marknadsanalys, Litteraturstudier
+							som förut varit smältare, en marknadsanalys, litteraturstudier
 							kring ergonomin inom en arbetsplats och 5 stycken utförliga
 							intervjuer med nuvarande smältare. Den insamlade datan
 							analyserades och därefter skapades en kravspecifikation. Fyra av
@@ -45,11 +45,11 @@ const KandidatarbeteProblem = () => {
 						/>
 						<TextcontainerKand
 							titel="Närhet till ugn"
-							text="En viktig del i arbetet kräver en närhet till ugn, något som måste förbli trots det utökade avståndet"
+							text="En viktig del i arbetet kräver en närhet till ugn, något som måste förbli trots det ökade avståndet"
 						/>
 						<TextcontainerKand
 							titel="Kommunikation med andra Arbetsroller"
-							text="Som smältare kommunicerar man aktivt med andra arbetsroller. Det måste enkelt gå att komminucera med varandra"
+							text="Som smältare kommunicerar man aktivt med andra arbetsroller. Det måste vara enkelt att komminucera med varandra"
 						/>
 						<TextcontainerKand
 							titel="Larm och säkerhter"
