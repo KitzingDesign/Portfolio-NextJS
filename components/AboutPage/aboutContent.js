@@ -47,7 +47,7 @@ const AboutContent = () => {
 		<Fragment>
 			<div className={styles.container}>
 				<h1 className={styles.titelAbove}>about</h1>
-				<div className={styles.titelUnder}></div>
+				<div className={styles.backgroundTitle}></div>
 
 				<div className={styles.flexText}>
 					<p

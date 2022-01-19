@@ -1,42 +1,64 @@
-.container {
+/* .container {
 	position: relative;
-	height: 90rem;
 	width: 100vw;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-}
+} */
 
-.parent {
-	position: absolute;
-	z-index: 2;
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-		rgba(0, 0, 0, 0.22) 0px 15px 12px;
-	height: 65rem;
-	width: 65rem;
-	border-radius: 100%;
-	background-color: rgba(255, 255, 255, 0.96);
-
+.container {
+	height: 50vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.tilt {
 	transform-style: preserve-3d;
 }
 
-.child {
+.circle {
 	position: absolute;
-	transform: translateZ(15rem);
+
+	transform: translate3d(-50%, -50%, 0);
+	z-index: 2;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	height: 300px;
+	width: 300px;
+	border-radius: 100%;
+	/* background-color: rgba(255, 255, 255, 0.96); */
+	transform-style: preserve-3d;
+}
+@media (min-width: 760px) {
+	.container {
+		padding-bottom: 0;
+		height: 100vh;
+	}
+	.circle {
+		height: 600px;
+		width: 600px;
+	}
+}
+
+.imgWrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 15rem);
 	width: 50%;
 	color: black;
 }
 
-.underImg {
+.stripe {
 	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 1rem);
 	width: 200vw;
-	height: 20rem;
+	height: 28%;
 	background-color: #c1e1c1;
-	transform: translateZ(1rem);
 }
 .under {
 	position: absolute;
@@ -46,7 +68,7 @@
 	color: lightgray;
 }
 
-@media (max-width: 42em) {
+/* @media (max-width: 42em) {
 	.parent {
 		height: 60rem;
 		width: 60rem;
@@ -61,4 +83,4 @@
 		height: 50rem;
 		width: 50rem;
 	}
-}
+} */

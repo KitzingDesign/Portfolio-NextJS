@@ -9,7 +9,7 @@
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.containerP {
+.text {
 	padding-top: 2.4rem;
 	padding-bottom: 1.6rem;
 }
@@ -17,6 +17,7 @@
 @media (max-width: 25em) {
 	.container {
 		width: 85vw;
+		margin: 0 auto;
 	}
 	.imgContainer {
 		width: 85vw;

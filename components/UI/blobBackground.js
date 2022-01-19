@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BlobBackground = () => {
 	return (
-		<div className={styles.containerV2}>
+		<div className={styles.container}>
 			<div className={styles.profilImg}>
 				<Image
 					src="/Startbild.svg"

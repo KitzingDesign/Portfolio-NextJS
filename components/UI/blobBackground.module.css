@@ -3,24 +3,34 @@
 	padding: 0;
 } */
 
-.containerV2 {
+.container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	overflow: hidden;
+
 	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
 }
 
 .profilImg {
-	width: 25vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	width: 80%;
 	z-index: 1;
 }
 
 .shapeBlob {
-	position: fixed;
-	height: 40vw;
-	width: 40vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	height: 100%;
+	width: 100%;
 	border-radius: 30% 50% 20% 40%;
 	animation: transform 20s ease-in-out infinite both alternate,
 		movement_one 40s ease-in-out infinite both;
@@ -46,7 +56,7 @@
 	}
 }
 
-@media (orientation: portrait) {
+/* @media (orientation: portrait) {
 	.profilImg {
 		width: 30vw;
 		z-index: 1;
@@ -70,4 +80,4 @@
 		height: 70vw;
 		width: 70vw;
 	}
-}
+} */

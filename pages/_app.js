@@ -12,10 +12,7 @@ function MyApp({ Component, pageProps, router }) {
 	return (
 		<Layout>
 			<Head>
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"
-				/>
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
 			<AnimatePresence exitBeforeEnter>
 				<Component {...pageProps} key={router.route} />
