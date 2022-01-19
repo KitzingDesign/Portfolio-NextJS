@@ -66,11 +66,14 @@ Medium:
 
 html {
 	font-size: 62.5%;
+	height: -webkit-fill-available;
 }
 
 body {
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
 }
 
 p {
