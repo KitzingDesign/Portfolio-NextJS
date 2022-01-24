@@ -9,7 +9,8 @@
 
 .headerElement {
 	display: flex;
-
+	height: 100%;
+	width: 100%;
 	align-items: center;
 	justify-content: center;
 }
@@ -60,12 +61,7 @@
 
 @media (orientation: portrait) {
 	.headerElement {
-		display: flex;
 		flex-direction: column-reverse;
-		justify-content: space-between;
-	}
-	.headerImg {
-		height: 80%;
 	}
 
 	.headerText {
@@ -83,14 +79,10 @@
 	.headerElement {
 		display: flex;
 		flex-direction: column-reverse;
-		gap: 20rem;
-	}
-	.headerImg {
-		height: 60%;
 	}
 
 	.headerText {
-		width: 100%;
+		width: 80vw;
 	}
 	.headerText p {
 		width: 100%;

@@ -13,6 +13,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
+	z-index: 1;
 }
 .tilt {
 	transform-style: preserve-3d;
@@ -58,6 +60,7 @@
 	transform: translate3d(-50%, -50%, 1rem);
 	width: 200vw;
 	height: 28%;
+	z-index: -1;
 	background-color: #c1e1c1;
 }
 .under {

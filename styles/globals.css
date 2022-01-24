@@ -56,6 +56,8 @@ Medium:
 
 :root {
 	--color: white;
+
+	--app-height: 100%;
 }
 
 * {
@@ -73,7 +75,8 @@ body {
 	font-size: 62.5%;
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
-	min-height: -webkit-fill-available;
+	height: 100%;
+	height: -webkit-fill-available;
 }
 
 p {
@@ -106,7 +109,7 @@ h2 {
 
 .slide-in {
 	position: absolute;
-	z-index: 10;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	height: 100vh;
@@ -117,7 +120,7 @@ h2 {
 
 .slide-out {
 	position: absolute;
-	z-index: 10;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	height: 100vh;
