@@ -76,9 +76,10 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		height: 100%;
 	}
 	.contentText {
-		width: 70%;
+		width: 90%;
 	}
 
 	.contentImg {
@@ -91,7 +92,7 @@
 
 @media (orientation: portrait) and (max-width: 34.5em) {
 	.contentText {
-		width: 90%;
+		width: 100%;
 	}
 
 	.contentImg {

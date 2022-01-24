@@ -93,10 +93,11 @@
 		flex-direction: column-reverse;
 		justify-content: center;
 		align-items: center;
+		height: 100%;
 	}
 
 	.contentText {
-		width: 90%;
+		width: 100%;
 	}
 
 	.contentImg {
