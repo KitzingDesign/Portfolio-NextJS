@@ -64,8 +64,12 @@
 		flex-direction: column-reverse;
 	}
 
+	.container {
+		height: 100%;
+	}
+
 	.headerText {
-		width: 80%;
+		width: 100%;
 	}
 	.headerText p {
 		width: 100%;
