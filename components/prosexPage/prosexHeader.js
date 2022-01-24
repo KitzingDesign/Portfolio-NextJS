@@ -36,7 +36,6 @@ const ProsexHeader = () => {
 							alt="strieps for background"
 						></Image>
 					</div>
-					<div className={styles.divider}></div>
 				</div>
 			</div>
 		</div>

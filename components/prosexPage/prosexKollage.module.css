@@ -29,7 +29,11 @@
 }
 
 @media (max-width: 25em) {
+	.svg {
+		transform: translateY(-100px);
+	}
 	.grid {
 		width: 85vw;
+		padding-top: 24px;
 	}
 }

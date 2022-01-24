@@ -7,12 +7,12 @@
 	position: relative;
 	width: 30vw;
 	margin: 0 auto;
-	padding-top: 27rem;
-	padding-bottom: 24rem;
+	padding-top: 19rem;
+	padding-bottom: 15rem;
 }
 .svg {
 	width: 101vw;
-	transform: translateX(-36vw) translateY(-25rem);
+	transform: translateX(-36vw) translateY(-15rem);
 	filter: invert(84%) sepia(17%) saturate(6209%) hue-rotate(317deg)
 		brightness(103%) contrast(98%);
 }
@@ -20,7 +20,7 @@
 .under {
 	position: relative;
 
-	height: 90rem;
+	height: 60rem;
 	width: 100%;
 	border: black solid 0.5rem;
 }
@@ -42,102 +42,121 @@
 
 @media (max-width: 140em) {
 	.imgContainer {
-		padding-top: 21rem;
+		padding-top: 200px;
+		padding-bottom: 500px;
 	}
 	.under {
-		position: relative;
-
-		height: 80rem;
+		height: 850px;
 	}
 	.svg {
 		width: 101vw;
-		transform: translateX(-36vw) translateY(-19rem);
+		transform: translateX(-36vw) translateY(-200px);
 	}
 }
 @media (max-width: 128em) {
 	.imgContainer {
-		padding-top: 21rem;
+		padding-top: 250px;
+		padding-bottom: 500px;
 	}
 	.under {
-		height: 68rem;
+		height: 700px;
 	}
 	.svg {
 		width: 103vw;
-		transform: translateX(-36vw) translateY(-13rem);
+		transform: translateX(-36vw) translateY(-200px);
 	}
 }
 @media (max-width: 116em) {
 	.imgContainer {
-		padding-top: 19rem;
+		padding-top: 250px;
+		padding-bottom: 200px;
 	}
 	.under {
-		height: 63rem;
+		height: 600px;
 	}
 	.svg {
-		transform: translateX(-36vw) translateY(-15rem);
+		transform: translateX(-36vw) translateY(-180px);
 	}
 }
 @media (max-width: 100em) {
 	.imgContainer {
-		padding-top: 18rem;
+		padding-top: 200px;
+		padding-bottom: 200px;
 	}
 	.under {
-		height: 68rem;
+		height: 520px;
 	}
 	.svg {
 		width: 103vw;
-		transform: translateX(-36vw) translateY(-12rem);
+		transform: translateX(-36vw) translateY(-120px);
 	}
 }
 
 @media (max-width: 71em) {
 	.imgContainer {
-		padding-top: 23rem;
+		padding-top: 170px;
+		padding-bottom: 120px;
 	}
 	.under {
-		height: 57rem;
+		height: 350px;
 	}
 	.svg {
 		width: 103vw;
-		transform: translateX(-36vw) translateY(-12rem);
+		transform: translateX(-36vw) translateY(-120px);
 	}
 }
 
 @media (max-width: 53em) {
 	.imgContainer {
-		padding-top: 20rem;
+		padding-top: 140px;
+		padding-bottom: 100px;
 	}
 	.under {
-		height: 53rem;
+		height: 240px;
 	}
 	.svg {
 		width: 103vw;
-		transform: translateX(-36vw) translateY(-12rem);
+		transform: translateX(-36vw) translateY(-80px);
 	}
 }
 
 @media (max-width: 44em) {
 	.imgContainer {
-		padding-top: 19rem;
+		padding-top: 130px;
+		padding-bottom: 70px;
 	}
 	.under {
-		height: 42rem;
+		height: 200px;
 	}
 	.svg {
 		width: 103vw;
-		transform: translateX(-36vw) translateY(-9rem);
+		transform: translateX(-36vw) translateY(-70px);
+	}
+}
+@media (max-width: 31.5em) {
+	.imgContainer {
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+	.under {
+		height: 140px;
+	}
+	.svg {
+		width: 103vw;
+		transform: translateX(-36vw) translateY(-20px);
 	}
 }
 
-@media (max-width: 31.5em) {
+@media (max-width: 21.8em) {
 	.imgContainer {
-		padding-top: 13rem;
+		padding-top: 70px;
+		padding-bottom: 70px;
 	}
 	.under {
-		height: 37rem;
+		height: 120px;
 	}
 	.svg {
 		width: 103vw;
-		transform: translateX(-36vw) translateY(-4rem);
+		transform: translateX(-36vw) translateY(-20px);
 	}
 } ;

@@ -28,12 +28,7 @@
 @media (max-width: 59em) {
 	.container {
 		width: 70vw;
-	}
-}
-
-@media (max-width: 59em) {
-	.container {
-		width: 70vw;
+		padding-top: 24px;
 	}
 }
 
@@ -44,6 +39,9 @@
 	}
 	.textConatiner {
 		width: 100%;
+	}
+	.textConatiner h2 {
+		margin-bottom: 2.44px;
 	}
 	.imgContainer {
 		width: 50%;

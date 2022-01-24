@@ -23,6 +23,10 @@
 @media (max-width: 59em) {
 	.container {
 		width: 70vw;
+		padding-top: 24px;
+	}
+	.text {
+		padding: 24px 0rem 24px 0rem;
 	}
 }
 

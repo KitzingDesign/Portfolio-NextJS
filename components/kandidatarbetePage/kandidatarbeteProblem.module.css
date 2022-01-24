@@ -19,7 +19,7 @@ p: 1.6rem
 	align-items: center;
 	justify-content: center;
 
-	height: 100rem;
+	height: 110rem;
 
 	background-color: #024f3d;
 }
@@ -96,6 +96,10 @@ p: 1.6rem
 @media (max-width: 88em) {
 	.container {
 		grid-template-columns: 1fr;
+		margin-top: 24px;
+	}
+	.green {
+		height: 700px;
 	}
 	.greenContent {
 		width: 70%;
@@ -106,6 +110,9 @@ p: 1.6rem
 }
 
 @media (max-width: 59em) {
+	.green {
+		height: 600px;
+	}
 	.greenContent {
 		width: 90%;
 	}

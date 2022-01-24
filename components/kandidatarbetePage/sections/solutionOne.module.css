@@ -153,3 +153,38 @@
 		transform: scale(1);
 	}
 }
+
+@media (max-width: 44em) {
+	.textContainer {
+		margin-top: 48px;
+	}
+	.smutsAbove p {
+		font-size: 1.8rem !important;
+	}
+	.smutsAvg div {
+		margin-left: 8px;
+		opacity: 0;
+	}
+	.smutsAvg p {
+		font-size: 1.8rem !important;
+	}
+}
+
+@media (max-width: 31.5em) {
+	.smutsAbove p {
+		font-size: 1.2rem !important;
+	}
+	.smutsAvg div {
+		margin-left: 0px;
+		opacity: 0;
+	}
+	.smutsAbove p {
+		font-size: 6px !important;
+	}
+	.smutsAvg p {
+		font-size: 6px !important;
+	}
+	.imgContainer {
+		width: 50%;
+	}
+}
