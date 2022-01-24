@@ -135,8 +135,9 @@
 }
 @media (max-width: 48em) {
 	.backgroundTitle {
-		width: 45%;
-		height: 20rem;
+		width: 50%;
+		height: 110px;
+		transform: translate(0, -105px);
 	}
 }
 
