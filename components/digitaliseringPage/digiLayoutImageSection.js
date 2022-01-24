@@ -11,8 +11,10 @@ const DigiLayoutImageSection = (props) => {
 				</div>
 
 				<Image
-					width={1900}
-					height={1200}
+					width="100%"
+					height="80%"
+					layout="responsive"
+					objectFit="contain"
 					src={`/kry-stor/${props.img}.png`}
 					alt="Time Line"
 				/>

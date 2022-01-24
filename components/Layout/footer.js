@@ -31,8 +31,10 @@ const Footer = () => {
 						<a target="_blank">
 							<div className={styles.social}>
 								<Image
-									width={1000}
-									height={1000}
+									width="100%"
+									height="100%"
+									layout="responsive"
+									objectFit="contain"
 									src="/footer/linkedin.svg"
 									alt="LinkdIn logo"
 								/>
@@ -46,8 +48,10 @@ const Footer = () => {
 						<a target="_blank">
 							<div className={styles.social}>
 								<Image
-									width={1000}
-									height={1000}
+									width="100%"
+									height="100%"
+									layout="responsive"
+									objectFit="contain"
 									src="/footer/instagram.svg"
 									alt="Intagram logo"
 								/>

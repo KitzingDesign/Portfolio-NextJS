@@ -59,11 +59,10 @@ const DigiHeader = () => {
 										<div className={styles.profileInfo}>
 											<div className={styles.profileImg}>
 												<Image
-													layout="responsive"
-													width={10}
-													height={8}
+													width={1000}
+													height={1000}
 													src="/Startbild.svg"
-													alt="Time Line"
+													alt="Jakob Kitzing"
 												/>
 											</div>
 											<p>

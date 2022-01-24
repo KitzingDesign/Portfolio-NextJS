@@ -2,6 +2,7 @@
 	padding-top: 9.6rem;
 	width: 70vw;
 	margin: 0 auto;
+	padding-bottom: 9.6rem;
 }
 
 .bakgrund {
@@ -47,13 +48,27 @@
 .flexImg {
 	margin: 0 auto;
 	align-items: center;
-	justify-content: center;
-	gap: 6.4rem;
+	justify-content: space-around;
 	display: flex;
-	height: 8vw;
 	/* width: 80%; */
 	overflow: hidden;
 	/* filter: grayscale(100%); */
 	filter: brightness(0%);
 	opacity: 50%;
+}
+
+.imgBox {
+	width: 10%;
+}
+
+@media (max-width: 32em) {
+	.container {
+		padding-top: 64px;
+		width: 80vw;
+		margin: 0 auto;
+		padding-bottom: 24px;
+	}
+	.container h3 {
+		padding-top: 24px;
+	}
 }

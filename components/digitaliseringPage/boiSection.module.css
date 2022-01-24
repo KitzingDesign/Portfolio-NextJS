@@ -7,3 +7,9 @@
 .imgContainer {
 	padding-top: 6.8rem;
 }
+
+@media (max-width: 32em) {
+	.container {
+		width: 80vw;
+	}
+}

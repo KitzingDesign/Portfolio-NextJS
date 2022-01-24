@@ -178,10 +178,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 100%;
+	width: 90%;
 	margin-top: 0.8rem;
-	padding-left: 2.4rem;
-	padding-right: 2.4rem;
 	padding-bottom: 1.2rem;
 }
 
@@ -191,23 +189,30 @@
 
 @media (max-width: 44em) {
 	.icon {
-		height: 2rem;
-	}
-}
-
-@media (max-width: 44em) {
-	.icon {
-		height: 2rem;
+		height: 12px;
 	}
 }
 
 @media (max-width: 32em) {
 	.icon {
-		height: 1.9rem;
+		height: 10px;
 	}
 	.iconer {
-		padding-bottom: 0rem;
-		padding-left: 0.8rem;
-		padding-right: 0.8rem;
+		margin-top: 3px;
+		padding-bottom: 0;
+	}
+	.likesText {
+		line-height: 1.1;
+		width: 90%;
+		font-size: 5px;
+	}
+	.profileInfo p {
+		line-height: 1.1;
+		font-size: 5px;
+	}
+	.profileImg {
+		height: 12px;
+		width: 12px;
+		padding-bottom: 15px;
 	}
 }

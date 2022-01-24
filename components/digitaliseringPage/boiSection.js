@@ -12,8 +12,10 @@ const BoiSection = () => {
 				</div>
 				<div className={styles.imgContainer}>
 					<Image
-						width={1800}
-						height={1200}
+						width="100%"
+						height="80%"
+						layout="responsive"
+						objectFit="contain"
 						src={`/kry-stor/boi-stor-gif.gif`}
 						alt="Boi"
 					/>
