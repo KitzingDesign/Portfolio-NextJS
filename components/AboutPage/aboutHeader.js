@@ -2,17 +2,48 @@ import styles from "./aboutHeader.module.css";
 import Image from "next/image";
 
 import Tilt from "react-parallax-tilt";
+import styled from "@emotion/styled";
 
 const AboutHeader = () => {
+	const Container = styled.div`
+		width: 100vw;
+		height: 60vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		z-index: 1;
+		@media (min-width: 760px) {
+			padding-bottom: 0;
+			height: 100vh;
+		}
+	`;
+	const Stripe = styled.div`
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate3d(-50%, -50%, 1rem);
+		width: 200vw;
+		height: 28%;
+		z-index: -1;
+		background-color: #c1e1c1;
+	`;
+	const ImgWrapper = styled.div`
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate3d(-50%, -50%, 15rem);
+		width: 50%;
+	`;
 	return (
-		<div className={`${styles.container} `}>
+		<Container>
 			<Tilt
 				options={{ max: 20, perspective: 1000 }}
 				tiltReverse={true}
 				className={styles.circle}
 			>
-				<div className={styles.stripe}></div>
-				<div className={styles.imgWrapper}>
+				<Stripe></Stripe>
+				<ImgWrapper>
 					<Image
 						width={1000}
 						height={1000}
@@ -20,9 +51,9 @@ const AboutHeader = () => {
 						src="/Startbild.svg"
 						alt="Jakob Kitzing"
 					/>
-				</div>
+				</ImgWrapper>
 			</Tilt>
-		</div>
+		</Container>
 	);
 	// return (
 	// 	<div className={`${styles.container} `}>

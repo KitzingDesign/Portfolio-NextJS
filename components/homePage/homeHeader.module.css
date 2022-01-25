@@ -73,14 +73,6 @@
 }
 
 @media (orientation: portrait) and (max-width: 21.5em) {
-	.container {
-		width: none;
-	}
-	.headerElement {
-		display: flex;
-		flex-direction: column-reverse;
-	}
-
 	.headerText {
 		width: 80vw;
 	}

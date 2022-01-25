@@ -17,6 +17,9 @@ const HomeHeader = () => {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media (orientation: portrait) {
+			height: 100%;
+		}
 	`;
 	const HeaderElement = styled.div`
 		display: flex;
@@ -24,6 +27,9 @@ const HomeHeader = () => {
 		width: 100%;
 		align-items: center;
 		justify-content: center;
+		@media (orientation: portrait) {
+			flex-direction: column-reverse;
+		} ;
 	`;
 
 	const HeaderText = styled.div`
@@ -36,6 +42,30 @@ const HomeHeader = () => {
 		}
 		& > h1 {
 			font-size: 5.2rem;
+		}
+		@media (orientation: portrait) {
+			width: 100%;
+			& > p {
+				width: 100%;
+			}
+		}
+	`;
+	const Btn = styled.a`
+		box-sizing: inline-block;
+		font-size: 2rem;
+		font-weight: bold;
+		background-color: black;
+		border: none;
+		padding: 1.6rem 3.2rem;
+		color: white;
+		text-decoration: none;
+		border-radius: 6px;
+		cursor: pointer;
+		&:hover {
+			background: white;
+			box-shadow: 2px black;
+			color: black;
+			cursor: pointer;
 		}
 	`;
 
@@ -55,7 +85,7 @@ const HomeHeader = () => {
 							står i centrum.
 						</p>
 						<Link href="/about">
-							<a className={styles.btn}>Mer om mig</a>
+							<Btn>Mer om mig</Btn>
 						</Link>
 					</HeaderText>
 					<div className={styles.headerImg}>
