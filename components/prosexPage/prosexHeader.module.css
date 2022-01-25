@@ -11,7 +11,7 @@
 	padding-bottom: 15rem;
 }
 .svg {
-	width: 101vw;
+	width: 102vw;
 	transform: translateX(-36vw) translateY(-15rem);
 	filter: invert(84%) sepia(17%) saturate(6209%) hue-rotate(317deg)
 		brightness(103%) contrast(98%);
@@ -115,8 +115,8 @@
 		height: 240px;
 	}
 	.svg {
-		width: 103vw;
-		transform: translateX(-36vw) translateY(-80px);
+		width: 105vw;
+		transform: translateX(-38vw) translateY(-80px);
 	}
 }
 
@@ -129,8 +129,8 @@
 		height: 200px;
 	}
 	.svg {
-		width: 103vw;
-		transform: translateX(-36vw) translateY(-70px);
+		width: 105vw;
+		transform: translateX(-38vw) translateY(-70px);
 	}
 }
 @media (max-width: 31.5em) {
@@ -143,7 +143,7 @@
 	}
 	.svg {
 		width: 103vw;
-		transform: translateX(-36vw) translateY(-20px);
+		transform: translateX(-38vw) translateY(-20px);
 	}
 }
 
@@ -156,7 +156,7 @@
 		height: 120px;
 	}
 	.svg {
-		width: 103vw;
-		transform: translateX(-36vw) translateY(-20px);
+		width: 105vw;
+		transform: translateX(-38vw) translateY(-20px);
 	}
 } ;

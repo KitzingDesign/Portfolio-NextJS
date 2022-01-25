@@ -3,16 +3,20 @@
 	margin: 0 auto;
 }
 
+.textContainer {
+	width: 70vw;
+	margin: 0 auto;
+}
 .imgContainer {
 	border: solid 0.5rem white;
 	background-color: white;
 	width: 70vw;
+	margin: 0 auto;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .text {
 	padding-top: 2.4rem;
-	padding-bottom: 1.6rem;
 }
 
 @media (max-width: 25em) {
@@ -20,7 +24,12 @@
 		width: 85vw;
 		margin: 0 auto;
 	}
+	.textContainer {
+		width: 85vw;
+		margin: 0 auto;
+	}
 	.imgContainer {
 		width: 85vw;
+		margin: 0 auto;
 	}
 }

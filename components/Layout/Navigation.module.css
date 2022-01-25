@@ -40,8 +40,17 @@
 	display: flex;
 	gap: 2.4rem;
 }
+
+.container:hover ul {
+	cursor: pointer;
+}
+
 .img {
 	width: 3.4rem;
+}
+
+.img:hover {
+	cursor: pointer;
 }
 
 .link {
