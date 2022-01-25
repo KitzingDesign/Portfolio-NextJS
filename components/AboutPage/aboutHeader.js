@@ -35,13 +35,28 @@ const AboutHeader = () => {
 		transform: translate3d(-50%, -50%, 15rem);
 		width: 50%;
 	`;
+
+	const Paralex = styled(Tilt)`
+		position: absolute;
+
+		transform: translate3d(-50%, -50%, 0);
+		z-index: 2;
+		box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+			rgba(0, 0, 0, 0.22) 0px 15px 12px;
+		height: 250px;
+		width: 250px;
+		border-radius: 100%;
+		/* background-color: rgba(255, 255, 255, 0.96); */
+		transform-style: preserve-3d;
+		@media (min-width: 760px) {
+			height: 600px;
+			width: 600px;
+		}
+	`;
+
 	return (
 		<Container>
-			<Tilt
-				options={{ max: 20, perspective: 1000 }}
-				tiltReverse={true}
-				className={styles.circle}
-			>
+			<Paralex options={{ max: 20, perspective: 1000 }} tiltReverse={true}>
 				<Stripe></Stripe>
 				<ImgWrapper>
 					<Image
@@ -52,7 +67,7 @@ const AboutHeader = () => {
 						alt="Jakob Kitzing"
 					/>
 				</ImgWrapper>
-			</Tilt>
+			</Paralex>
 		</Container>
 	);
 	// return (

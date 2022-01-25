@@ -68,6 +68,9 @@ const HomeHeader = () => {
 			cursor: pointer;
 		}
 	`;
+	const HeaderImg = styled.div`
+		width: 80%;
+	`;
 
 	return (
 		<div>
@@ -88,9 +91,9 @@ const HomeHeader = () => {
 							<Btn>Mer om mig</Btn>
 						</Link>
 					</HeaderText>
-					<div className={styles.headerImg}>
+					<HeaderImg>
 						<BlobBackground />
-					</div>
+					</HeaderImg>
 				</HeaderElement>
 			</Container>
 		</div>
