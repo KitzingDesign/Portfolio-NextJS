@@ -23,7 +23,7 @@ const HertzHeader = () => {
 					alt="Mockup on computer screen"
 				/>
 				{/* <img src="/Macbook-mockup-hertz.jpg" /> */}
-				<h2>01</h2>
+				<h2 className={styles.nr}>01</h2>
 			</div>
 		</div>
 	);

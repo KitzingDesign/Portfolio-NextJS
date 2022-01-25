@@ -182,12 +182,12 @@
 			transform: translate(0, 0);
 		}
 		to {
-			transform: translate(37vw, 20vh) scale(3);
+			transform: translate(37vw, 25vh) scale(2);
 		}
 	}
 	@keyframes logoOut {
 		from {
-			transform: translate(37vw, 20vh) scale(3);
+			transform: translate(37vw, 25vh) scale(3);
 		}
 		to {
 			transform: translate(0, 0);

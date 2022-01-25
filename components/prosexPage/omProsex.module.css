@@ -6,6 +6,7 @@
 .imgContainer {
 	border: solid 0.5rem white;
 	background-color: white;
+	width: 70vw;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 

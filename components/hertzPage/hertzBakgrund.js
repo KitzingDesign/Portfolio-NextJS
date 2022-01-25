@@ -28,7 +28,7 @@ const HertzBakgrund = () => {
 						height="19%"
 						layout="responsive"
 						objectFit="contain"
-						src="/bilCompany/bil-timeline.svg"
+						src="/bilCompany/bil-timeline.png"
 						alt="Time Line"
 						data-aos="fade-right"
 					/>

@@ -9,37 +9,35 @@
 }
 
 .headings {
-	width: 250rem;
-	padding-bottom: 10rem;
+	padding-bottom: 100px;
 	position: relative;
 }
 
 .headImg {
-	width: 170%;
+	width: 55vw;
+	z-index: -1;
 }
-.headImg h2 {
+.nr {
 	position: absolute;
 	right: 0%;
-	bottom: 10rem;
-	font-size: 55rem;
+	bottom: 50%;
+	transform: translateY(140%);
+	font-size: 24vw;
 	line-height: 0.6;
 	color: #0b0a11;
 	opacity: 0.09;
 }
 
 .vertical {
-	padding-bottom: 5rem;
+	padding-bottom: 50px;
 	writing-mode: tb-rl;
 	transform: rotate(180deg);
-	text-align: justify;
 }
 
 .year {
-	display: inline-block;
 	color: #fed000;
-	padding-right: 0;
 	font-weight: 500;
-	font-size: 45rem;
+	font-size: 20vw;
 
 	opacity: 0;
 	animation-name: year;
@@ -51,11 +49,12 @@
 
 .season {
 	text-transform: uppercase;
+	text-align: right;
 	font-weight: 400;
 	line-height: 30%;
-	margin-top: 0;
-	text-align: right;
-	font-size: 16rem;
+	font-size: 7vw;
+	margin-bottom: 20px;
+
 	text-decoration: underline black 0.5rem;
 
 	opacity: 0;
@@ -69,9 +68,9 @@
 .above {
 	position: absolute;
 	z-index: 5;
-	left: 15rem;
-	font-size: 9.6rem;
-	bottom: 18rem;
+	left: 7vw;
+	font-size: 5vw;
+	bottom: 120px;
 
 	opacity: 0;
 	animation-name: above;
@@ -112,61 +111,34 @@
 	}
 }
 
-@media (max-width: 100em) {
-	.season {
-		font-size: 15rem;
-	}
-	.year {
-		font-size: 30rem;
-	}
-	.above {
-		left: 12rem;
-		font-size: 8rem;
-	}
-}
-
-@media (max-width: 81em) {
+@media (max-width: 84em) {
 	.container {
 		height: inherit;
 	}
-}
-
-@media (max-width: 44em) {
-	.season {
-		font-size: 12rem;
-	}
-	.year {
-		font-size: 25rem;
+	.nr {
 	}
 	.above {
-		left: 12rem;
-		font-size: 6rem;
-		bottom: 14rem;
+		bottom: 100px;
 	}
-	.headImg h2 {
-		font-size: 28rem;
-		bottom: 13%;
+	.season {
+		margin-bottom: 70px;
 	}
 }
 
-@media (max-height: 25em) {
-	.season {
-		font-size: 10rem;
-	}
-	.year {
-		font-size: 23rem;
-	}
+@media (max-width: 75em) {
 	.above {
-		left: 12rem;
-		font-size: 6rem;
-		bottom: 14rem;
+		bottom: 90px;
 	}
-	.headImg h2 {
-		font-size: 35rem;
-		bottom: 17%;
+	.season {
+		margin-bottom: 40px;
 	}
-	.headImg Img {
-		width: 80%;
-		transform: translateX(10rem);
+}
+
+@media (max-width: 50em) {
+	.above {
+		bottom: 90px;
+	}
+	.season {
+		margin-bottom: 20px;
 	}
 }
