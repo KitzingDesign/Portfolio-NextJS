@@ -1,4 +1,4 @@
-.app {
+/* .app {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -12,10 +12,6 @@
 	margin-bottom: 1.2rem;
 }
 
-.app img {
-	width: 80%;
-}
-
 @media (max-width: 51em) {
 	.app {
 		gap: 2rem;
@@ -26,7 +22,4 @@
 
 		margin-bottom: 0rem;
 	}
-	.app img {
-		width: 60%;
-	}
-}
+} */

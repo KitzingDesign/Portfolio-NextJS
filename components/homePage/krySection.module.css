@@ -1,4 +1,4 @@
-.container {
+/* .container {
 	height: 100vh;
 	background-color: black;
 }
@@ -9,42 +9,36 @@
 	color: White;
 
 	font-size: 8rem;
-}
+} */
 
-.appar {
+/* .appar {
 	width: 80vw;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 2.4rem;
-}
+} */
 
-.content {
+/* .content {
 	height: inherit;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 10rem;
-}
+} */
 
-.icon {
-	color: white;
-	height: 4rem;
-	margin-left: 1rem;
-}
-
-.link:hover {
+/* .link:hover {
 	font-style: italic;
 	cursor: pointer;
-}
+} */
 
-.icon {
+/* .icon {color: white;
 	height: 9.6rem;
 	margin-left: 1rem;
-}
+} */
 
-.projectLink {
+/* .projectLink {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -62,7 +56,7 @@
 
 	text-decoration: none;
 	cursor: pointer;
-}
+} */
 
 .animationOne {
 	opacity: 0;
@@ -126,48 +120,45 @@
 }
 
 @media (max-width: 51em) and (orientation: landscape) {
-	.container h2 {
+	/* .container h2 {
 		font-size: 6.4rem;
-	}
-	.content {
+	} */
+	/* .content {
 		gap: 4rem;
-	}
-	.icon {
+	} */
+	/* .icon {
 		height: 6.4rem;
-	}
-	.projectLink p {
+	} */
+	/* .projectLink p {
 		font-size: 3.6rem;
-	}
+	} */
 }
 
 @media (orientation: portrait) {
-	.container {
+	/* .container {
 		height: 100%;
-	}
-	.container h2 {
-		font-size: 6.4rem;
-	}
+	} */
 
-	.projectLink p {
+	/* .projectLink p {
 		font-size: 4.8rem;
-	}
-	.icon {
+	} */
+	/* .icon {
 		height: 6.4rem;
 		margin-left: 1rem;
-	}
-	.content {
+	} */
+	/* .content {
 		gap: 6vh;
-	}
-	.appar {
+	} */
+	/* .appar {
 		grid-template-columns: repeat(6, 1fr);
 
 		gap: 2.4rem;
-	}
+	} */
 
-	.item {
+	/* .item {
 		grid-column: span 2;
 	}
 	.item:nth-last-child(2) {
 		grid-column: 2 / span 2;
-	}
+	} */
 }
