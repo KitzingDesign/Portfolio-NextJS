@@ -27,14 +27,21 @@ const Text = styled.p`
 	margin-top: 2.4rem;
 	margin-bottom: 2.4rem;
 `;
+const stay = false;
 
-const Texten = (props) => {
-	const [stay, setStay] = useState(true);
-};
 const HertzSection = (props) => {
+	if (props.fade) {
+		stay = true;
+	}
 	return (
 		<div className={styles.container} id="Hertz">
-			<div className={`${styles.contentText} ${styles.visableText}`}>
+			<div
+				className={
+					stay
+						? `${styles.contentText} ${styles.visableText}`
+						: styles.contentText
+				}
+			>
 				<TextContainer>
 					<h2>Biluthyrning</h2>
 					<Text>
@@ -47,7 +54,11 @@ const HertzSection = (props) => {
 				</TextContainer>
 			</div>
 
-			<div className={`${styles.contentImg} ${styles.visableImg}`}>
+			<div
+				className={
+					stay ? `${styles.contentImg} ${styles.visableImg}` : styles.contentImg
+				}
+			>
 				<ImgContainer>
 					<Image
 						width="100%"
