@@ -17,11 +17,36 @@ import { useState } from "react";
 // 		transform: translate(0, 0);
 // 	}`;
 
+const Container = styled.div`
+	height: 100vh;
+	max-width: 80vw;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	@media (orientation: portrait) {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	@media (orientation: portrait) and (max-width: 34.5em) {
+		height: 100%;
+	}
+`;
 const TextContainer = styled.div`
-	width: 40vw;
+	width: 100%;
+	@media (orientation: portrait) {
+		width: 100%;
+	}
 `;
 const ImgContainer = styled.div`
 	width: 40vw;
+	@media (orientation: portrait) {
+		width: 65vw;
+	}
+	@media (orientation: portrait) and (max-width: 34.5em) {
+		width: 80vw;
+	}
 `;
 const Text = styled.p`
 	margin-top: 2.4rem;
@@ -34,7 +59,7 @@ const HertzSection = (props) => {
 		stay = true;
 	}
 	return (
-		<div className={styles.container} id="Hertz">
+		<Container>
 			<div
 				className={
 					stay
@@ -70,7 +95,7 @@ const HertzSection = (props) => {
 					/>
 				</ImgContainer>
 			</div>
-		</div>
+		</Container>
 	);
 };
 

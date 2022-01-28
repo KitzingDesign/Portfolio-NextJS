@@ -6,11 +6,38 @@ import styled from "@emotion/styled";
 // import produktImg from "public/static/herobild.png";
 const stay = false;
 
+const Container = styled.div`
+	height: 100vh;
+	max-width: 80vw;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	@media (orientation: portrait) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	@media (orientation: portrait) and (max-width: 34.5em) {
+	}
+`;
 const TextContainer = styled.div`
-	width: 40vw;
+	width: 100%;
+	@media (orientation: portrait) {
+		width: 100%;
+	}
 `;
 const ImgContainer = styled.div`
 	width: 40vw;
+	width: 40vw;
+	padding-bottom: 16rem;
+	@media (orientation: portrait) {
+		width: 65vw;
+		padding-bottom: 4.8rem;
+	}
+	@media (orientation: portrait) and (max-width: 34.5em) {
+		width: 75vw;
+	}
 `;
 
 const KandidatarbeteSection = (props) => {
@@ -18,8 +45,15 @@ const KandidatarbeteSection = (props) => {
 		stay = true;
 	}
 	return (
-		<div className={styles.container} id="Kandidat">
-			<div className={`${styles.contentImg} ${styles.visableImg}`} id="Bild">
+		<Container>
+			<div
+				className={
+					stay
+						? `${styles.contentImg} ${styles.visableImg}`
+						: styles.contentText
+				}
+				id="Bild"
+			>
 				<ImgContainer>
 					<Image
 						width={1000}
@@ -29,7 +63,14 @@ const KandidatarbeteSection = (props) => {
 					/>
 				</ImgContainer>
 			</div>
-			<div className={`${styles.contentText} ${styles.visableText}`} id="Text">
+			<div
+				className={
+					stay
+						? `${styles.contentText} ${styles.visableText}`
+						: styles.contentText
+				}
+				id="Text"
+			>
 				<TextContainer>
 					<h2>Kandidatarbete</h2>
 					<p className={styles.text}>
@@ -44,7 +85,7 @@ const KandidatarbeteSection = (props) => {
 					alt="Prototype Kandidatarbete"
 				/>
 			</div>
-		</div>
+		</Container>
 	);
 };
 
