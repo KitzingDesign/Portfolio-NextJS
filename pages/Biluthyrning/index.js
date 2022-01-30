@@ -13,6 +13,16 @@ import Footer from "../../components/Layout/footer";
 import AOS from "aos";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import styled from "@emotion/styled";
+
+//emotion styles
+const Sticky = styled.p`
+	writing-mode: tb-rl;
+	bottom: 1%;
+	left: 1%;
+	position: fixed;
+	text-transform: uppercase;
+`;
 
 const HertzPage = () => {
 	useEffect(() => {
@@ -24,9 +34,7 @@ const HertzPage = () => {
 				<title>Car Rental</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</Head>
-			<p className={styles.sticky}>
-				Usability - Teknisk Design Chalmers - 2020
-			</p>
+			<Sticky>Usability - Teknisk Design Chalmers - 2020</Sticky>
 
 			<HertzHeader />
 			<HertzBakgrund />

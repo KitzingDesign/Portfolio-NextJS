@@ -3,12 +3,23 @@ import styles from "./kollage.module.css";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import Image from "next/image";
+import styled from "@emotion/styled";
+
+//emotion styles
+const ImgContainer = styled.div`
+	width: 100%;
+`;
+const Hide = styled(Zoom)`
+	@media (max-width: 75em) {
+		display: none;
+	}
+`;
 
 const Kollage = () => {
 	return (
 		<div className={styles.container}>
 			<Zoom>
-				<div className={styles.imgContainer}>
+				<ImgContainer>
 					<Image
 						width="100%"
 						height="100%"
@@ -17,21 +28,18 @@ const Kollage = () => {
 						src={"/Kandidat/solutions/kollage/bild-1.jpg"}
 						alt="prototyping"
 					></Image>
-				</div>
+				</ImgContainer>
 			</Zoom>
 			<div className={styles.hide}>
-				<Zoom>
-					<div className={`${styles.imgContainer} `}>
-						<Image
-							width="100%"
-							height="100%"
-							layout="responsive"
-							objectFit="contain"
+				<Hide>
+					<div className={`${styles.imgContainer}`}>
+						<img
 							src={"/Kandidat/solutions/kollage/bild-2.jpg"}
 							alt="prototyping"
-						></Image>
+							className={styles.img}
+						/>
 					</div>
-				</Zoom>
+				</Hide>
 			</div>
 			<Zoom>
 				<div className={styles.imgContainer}>

@@ -10,6 +10,10 @@
 	width: 100%;
 }
 
+.img {
+	width: 100%;
+}
+
 @media (max-width: 75em) {
 	.container {
 		margin: 0 auto;

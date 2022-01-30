@@ -47,7 +47,7 @@ const Swipes = styled.div`
 	position: absolute;
 	z-index: 1;
 	border-radius: 2.6vw;
-	height: 41.7vw;
+	height: 42.1vw;
 	width: 22vw;
 	overflow: hidden;
 	cursor: pointer;
@@ -256,6 +256,8 @@ const OrangeBackground = styled.div`
 	background-color: #e38547;
 `;
 
+const Carousell = styled(Swiper)``;
+
 const DigiHeader = () => {
 	return (
 		<UpperContainer>
@@ -265,7 +267,7 @@ const DigiHeader = () => {
 						<Image width={950} height={1700} src="/Phone.png" alt="Iphone" />
 					</Phone>
 					<Swipes>
-						<Swiper
+						<Carousell
 							id="swiper-color"
 							slidesPerView={1}
 							spaceBetween={0}
@@ -307,7 +309,7 @@ const DigiHeader = () => {
 											</p>
 										</ProfileInfo>
 										<SwiperImg>
-											<Swiper
+											<Carousell
 												id="swiper-color"
 												slidesPerView={1}
 												spaceBetween={0}
@@ -358,7 +360,7 @@ const DigiHeader = () => {
 														/>
 													</ImgContainer>
 												</SwiperSlide>
-											</Swiper>
+											</Carousell>
 										</SwiperImg>
 										<Iconer>
 											<div>
@@ -375,7 +377,7 @@ const DigiHeader = () => {
 									</SecondSlide>
 								</Swipe>
 							</SwiperSlide>
-						</Swiper>
+						</Carousell>
 					</Swipes>
 				</div>
 			</KryImg>
