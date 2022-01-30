@@ -1,3 +1,7 @@
+.seethrough {
+	pointer-events: none;
+}
+
 .slideIn {
 	position: fixed;
 	top: 0;

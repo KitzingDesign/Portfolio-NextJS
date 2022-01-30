@@ -14,7 +14,7 @@ const AboutHeader = () => {
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
-		z-index: -1;
+		z-index: 0;
 		@media (min-width: 760px) {
 			padding-bottom: 0;
 			height: 100vh;
