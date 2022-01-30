@@ -1,5 +1,4 @@
 import HertzHeader from "../../components/hertzPage/hertzHeader";
-import Sticky from "react-sticky-el";
 import styles from "./index.module.css";
 import { Fragment, useEffect } from "react";
 import Navigation from "../../components/Layout/Navigation";
