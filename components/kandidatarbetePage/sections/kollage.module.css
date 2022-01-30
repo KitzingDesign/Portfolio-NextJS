@@ -6,14 +6,6 @@
 	grid-template-rows: 1fr 1fr 1fr;
 }
 
-.imgContainer {
-	width: 100%;
-}
-
-.img {
-	width: 100%;
-}
-
 @media (max-width: 75em) {
 	.container {
 		margin: 0 auto;
@@ -22,7 +14,6 @@
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
-
 	.hide {
 		display: none;
 	}

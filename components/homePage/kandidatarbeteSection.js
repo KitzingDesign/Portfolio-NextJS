@@ -23,6 +23,10 @@ const Container = styled.div`
 `;
 const TextContainer = styled.div`
 	width: 100%;
+	& > p {
+		margin-top: 2.4rem;
+		margin-bottom: 2.4rem;
+	}
 	@media (orientation: portrait) {
 		width: 100%;
 	}
@@ -73,7 +77,7 @@ const KandidatarbeteSection = (props) => {
 			>
 				<TextContainer>
 					<h2>Kandidatarbete</h2>
-					<p className={styles.text}>
+					<p>
 						Som kandidatarbete fick min grupp som uppdrag tillsammans med
 						designföretaget Boid att utveckla framtidens kontrollrum åt
 						legeringsverket Vagrön Alloys. Vår del i arbetet var att framställa

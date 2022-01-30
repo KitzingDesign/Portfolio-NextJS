@@ -69,7 +69,7 @@ const KandidatarbeteSlutkocept = () => {
 					urlFirst="hang-view"
 					firstTitel="Bardisk"
 					firstText="Bardisken är inte bara ett skydd för smuts, den är också en enkel väg till kommunikation. Genom bardisken kan andra arbetspositioner smidigt svänga förbi och prata med smältaren."
-					urlSecond="above-view"
+					urlSecond="headphones-view"
 					secondTitel="Hörlurar"
 					secondText="Hörlurarna är till för att enkelt kunna kommunicera med andra arbetspositioner när de befinner sig på en annan plats."
 					alt="Kommunikation"

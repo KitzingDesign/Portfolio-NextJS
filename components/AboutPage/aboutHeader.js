@@ -6,13 +6,15 @@ import styled from "@emotion/styled";
 
 const AboutHeader = () => {
 	const Container = styled.div`
+		position: relative;
+
 		width: 100vw;
 		height: 60vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
-		z-index: 1;
+		z-index: -1;
 		@media (min-width: 760px) {
 			padding-bottom: 0;
 			height: 100vh;
@@ -24,10 +26,13 @@ const AboutHeader = () => {
 		left: 50%;
 		transform: translate3d(-50%, -50%, 1rem);
 		width: 200vw;
+		overflow: hidden;
+
 		height: 28%;
-		z-index: -1;
+		z-index: -5;
 		background-color: #c1e1c1;
 	`;
+
 	const ImgWrapper = styled.div`
 		position: absolute;
 		top: 50%;
@@ -40,7 +45,7 @@ const AboutHeader = () => {
 		position: absolute;
 
 		transform: translate3d(-50%, -50%, 0);
-		z-index: 2;
+		z-index: -4;
 		box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 			rgba(0, 0, 0, 0.22) 0px 15px 12px;
 		height: 250px;
@@ -57,7 +62,9 @@ const AboutHeader = () => {
 	return (
 		<Container>
 			<Paralex options={{ max: 20, perspective: 1000 }} tiltReverse={true}>
-				<Stripe></Stripe>
+				<div className={styles.overflow}>
+					<Stripe />
+				</div>
 				<ImgWrapper>
 					<Image
 						width={1000}

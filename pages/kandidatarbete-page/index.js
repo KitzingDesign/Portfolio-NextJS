@@ -20,7 +20,7 @@ const KandidatarbetePage = () => {
 	}, []);
 
 	return (
-		<div className={styles.styles}>
+		<div>
 			<Head>
 				<title>Kontrollrum</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />

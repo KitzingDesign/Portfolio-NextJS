@@ -35,8 +35,9 @@ const ContentImg = styled.div`
 	@media (orientation: portrait) {
 		border: solid black 2px;
 		width: 65vw;
-		padding-bottom: 2.4rem;
-		margin-bottom: 2.4rem;
+		margin-top: 64px;
+		padding-bottom: 22px;
+		margin-bottom: 24rpx;
 	}
 `;
 const Img = styled.div`

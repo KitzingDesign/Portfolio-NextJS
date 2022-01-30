@@ -32,7 +32,8 @@
 
 .links p {
 	font-size: 2.4rem;
-	text-decoration: underline 0.2rem gray;
+	text-decoration: underline gray;
+	-webkit-text-decoration-line: underline;
 }
 
 .email {
