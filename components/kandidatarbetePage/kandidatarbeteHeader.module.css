@@ -1,4 +1,4 @@
-.container {
+/* .container {
 	height: 100vh;
 	max-width: 95vw;
 	margin: 0 auto;
@@ -6,12 +6,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-}
+} */
 
-.headings {
+/* .headings {
 	padding-bottom: 100px;
 	position: relative;
-}
+} */
 
 .headImg {
 	width: 50vw;
@@ -28,13 +28,13 @@
 	opacity: 0.09;
 }
 
-.vertical {
+/* .vertical {
 	writing-mode: tb-rl;
 	transform: rotate(180deg);
 	padding-bottom: 50px;
-}
+} */
 
-.year {
+/* .year {
 	color: #c0d1c5;
 	font-weight: 500;
 	font-size: 20vw;
@@ -45,9 +45,9 @@
 	animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 	animation-fill-mode: forwards;
 	animation-delay: 0.5s;
-}
+} */
 
-.season {
+/* .season {
 	text-transform: uppercase;
 	text-align: right;
 	font-weight: 400;
@@ -62,9 +62,9 @@
 	animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 	animation-fill-mode: forwards;
 	animation-delay: 0.7s;
-}
+} */
 
-.above {
+/* .above {
 	position: absolute;
 	left: 7vw;
 	font-size: 6vw;
@@ -76,7 +76,7 @@
 	animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 	animation-fill-mode: forwards;
 	animation-delay: 0.9s;
-}
+} */
 
 @keyframes year {
 	from {
@@ -110,9 +110,9 @@
 }
 
 @media (max-width: 84em) {
-	.container {
+	/* .container {
 		height: inherit;
-	}
+	} */
 	.nr {
 	}
 	.above {

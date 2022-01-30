@@ -1,29 +1,24 @@
-.container {
+/* .container {
 	width: 70vw;
 	margin: 0 auto;
 	margin-top: 9.8rem;
-}
+} */
 
-.container p {
+/* .container p {
 	margin-top: 2.4rem;
-}
+} */
 
-.imgContainer {
-	width: 100%;
-	margin-top: 2.4rem;
-}
-
-.descriptionImg {
+/* .descriptionImg {
 	margin-top: 0vh;
-}
+} */
 
-.swiperContainer {
+/* .swiperContainer {
 	margin: 0 auto;
 	width: 100%;
-}
+} */
 
-@media (max-width: 25em) {
+/* @media (max-width: 25em) {
 	.container {
 		width: 80vw;
 	}
-}
+} */

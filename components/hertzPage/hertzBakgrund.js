@@ -1,13 +1,51 @@
 import styles from "./hertzBakgrund.module.css";
 import Image from "next/image";
+import styled from "@emotion/styled";
+
+const Container = styled.div`
+	max-width: 100vw;
+	margin: 0 auto;
+	background-color: black;
+	color: white;
+	}
+`;
+const Content = styled.div`
+	width: 70vw;
+	margin: 0 auto;
+	& > p {
+		padding-top: 1.6rem;
+		padding-bottom: 1.6rem;
+	}
+	@media (max-width: 25em) {
+		width: 80vw;
+	}
+`;
+const BackgroundTitle = styled.h2`
+	padding-top: 12.8rem;
+`;
+const Divider = styled.div`
+	height: 1px;
+	background-color: white;
+`;
+const CopyRightText = styled.p`
+	text-align: right;
+`;
+const ProcessTitle = styled.h2`
+	text-align: center;
+	padding-top: 4.8rem;
+
+	padding-bottom: 6.4rem;
+`;
+const ProfileImg = styled.div`
+	width: 100%;
+	padding-bottom: 12.8rem;
+`;
 
 const HertzBakgrund = () => {
 	return (
-		<div className={styles.container}>
-			<div className={styles.content}>
-				<h2 className={styles.Bakgrund} data-aos="fade-up">
-					Bakgrund
-				</h2>
+		<Container>
+			<Content>
+				<BackgroundTitle data-aos="fade-up">Bakgrund</BackgroundTitle>
 				<p data-aos="fade-up">
 					Tillsammans med fyra kursare fick vi i uppdrag att utvärdera och
 					förbättra gränssnittet för biluthyrningsföretags hemsida. Genom att
@@ -15,14 +53,12 @@ const HertzBakgrund = () => {
 					en ny prototyp som ställdes emot den befintliga sidan. Nedan kan en
 					sammanfattning av processen ses.
 				</p>
-				<div className={styles.divider} data-aos="fade-up"></div>
-				<p className={styles.copywrite} data-aos="fade-up">
+				<Divider data-aos="fade-up"></Divider>
+				<CopyRightText data-aos="fade-up">
 					© Kitzing Dexner Neidert Kristoffersson Sandberg
-				</p>
-				<h2 className={styles.process} data-aos="fade-up">
-					Process
-				</h2>
-				<div className={styles.profilImg}>
+				</CopyRightText>
+				<ProcessTitle data-aos="fade-up">Process</ProcessTitle>
+				<ProfileImg>
 					<Image
 						width="100%"
 						height="19%"
@@ -32,9 +68,9 @@ const HertzBakgrund = () => {
 						alt="Time Line"
 						data-aos="fade-right"
 					/>
-				</div>
-			</div>
-		</div>
+				</ProfileImg>
+			</Content>
+		</Container>
 	);
 };
 

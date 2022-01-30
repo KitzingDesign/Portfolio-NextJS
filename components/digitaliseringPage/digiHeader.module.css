@@ -63,7 +63,6 @@
 	width: 22vw;
 	overflow: hidden;
 	cursor: pointer;
-	/* cursor: col-resize; */
 }
 
 .swipe {
@@ -86,7 +85,7 @@
 .wCircle {
 	transform: translate(0%, 100%);
 	width: 30%;
-	padding-top: 60%; /* 1:1 Aspect Ratio */
+	padding-top: 60%;
 	background-color: white;
 	border-bottom-right-radius: 200px;
 	border-top-right-radius: 200px;
@@ -96,7 +95,7 @@
 	transform: translate(0%, 100%);
 	float: right;
 	width: 30%;
-	padding-top: 60%; /* 1:1 Aspect Ratio */
+	padding-top: 60%;
 	background-color: #e38547;
 	border-bottom-left-radius: 200px;
 	border-top-left-radius: 200px;

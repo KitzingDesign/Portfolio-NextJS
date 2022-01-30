@@ -4,6 +4,7 @@ import Image from "next/image";
 // import Swiper core and required modules
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import styled from "@emotion/styled";
 
 SwiperCore.use([Pagination, Navigation]);
 
@@ -12,9 +13,29 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+const Container = styled.div`
+	width: 70vw;
+	margin: 0 auto;
+	margin-top: 9.8rem;
+	& > p {
+		margin-top: 2.4rem;
+	}
+	@media (max-width: 25em) {
+		width: 80vw;
+	}
+`;
+const SwiperContainer = styled.div`
+	width: 100%;
+	margin-top: 2.4rem;
+	}
+`;
+const DescriptionImg = styled.p`
+	margin-top: 0vh;
+`;
+
 const HertzOld = () => {
 	return (
-		<div className={styles.container}>
+		<Container>
 			<div>
 				<h2 data-aos="fade-up">Befintlig Hemsida</h2>
 				<p data-aos="fade-up">
@@ -28,7 +49,7 @@ const HertzOld = () => {
 					redesign.
 				</p>
 			</div>
-			<div className={styles.swiperContainer} data-aos="fade-up">
+			<SwiperContainer data-aos="fade-up">
 				<Swiper
 					id="swiper-color"
 					slidesPerView={1}
@@ -50,7 +71,7 @@ const HertzOld = () => {
 								src="/Car-rental/HertzOld-1.png"
 								alt="Homepage Old Site"
 							/>
-							<p className={styles.descriptionImg}>Startsida</p>
+							<DescriptionImg>Startsida</DescriptionImg>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide>
@@ -62,9 +83,7 @@ const HertzOld = () => {
 							src="/Car-rental/HertzOld-2.png"
 							alt="Rentalpage Old Site"
 						/>
-						<p className={styles.descriptionImg}>
-							Uppgifter gällande utrhyrningen
-						</p>
+						<DescriptionImg>Uppgifter gällande utrhyrningen</DescriptionImg>
 					</SwiperSlide>
 					<SwiperSlide>
 						<Image
@@ -75,7 +94,7 @@ const HertzOld = () => {
 							src="/Car-rental/HertzOld-3.png"
 							alt="Choose Car Page Old Site"
 						/>
-						<p className={styles.descriptionImg}>Val av Bil</p>
+						<DescriptionImg>Val av Bil</DescriptionImg>
 					</SwiperSlide>
 					<SwiperSlide>
 						<Image
@@ -86,11 +105,11 @@ const HertzOld = () => {
 							src="/Car-rental/HertzOld-4.png"
 							alt="Payment Page Old Site"
 						/>
-						<p className={styles.descriptionImg}>Betalningsinfromation</p>
+						<DescriptionImg>Betalningsinfromation</DescriptionImg>
 					</SwiperSlide>
 				</Swiper>
-			</div>
-		</div>
+			</SwiperContainer>
+		</Container>
 	);
 };
 export default HertzOld;

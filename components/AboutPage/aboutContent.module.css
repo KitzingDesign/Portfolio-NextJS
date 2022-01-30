@@ -1,16 +1,16 @@
-.container {
+/* .container {
 	padding-top: 10rem;
 	max-width: 70vw;
 	margin: 0 auto;
-}
+} */
 
-.titelAbove {
+/* .titelAbove {
 	display: inline-block;
 	font-size: 8rem;
 	margin-bottom: 3.4rem;
 	color: white;
-}
-.backgroundTitle {
+} */
+/* .backgroundTitle {
 	position: absolute;
 	background-color: #c1e1c1;
 	width: 40%;
@@ -20,17 +20,14 @@
 	left: 0;
 	z-index: -1;
 	clip-path: polygon(0 7%, 92% 0, 80% 75%, 0% 94%);
-}
-.flexText {
+} */
+/* .flexText {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	gap: 6.4rem;
-}
+} */
 
-.text {
-	padding-right: 2rem;
-	border-right: gray solid 0.2rem;
-	font-size: 2.4rem;
+.textDiv {
 	opacity: 0;
 }
 
@@ -151,10 +148,5 @@
 	}
 	.emailContainer p {
 		width: 100%;
-	}
-}
-@media (max-height: 25em) {
-	.container {
-		max-width: 85vw;
 	}
 }

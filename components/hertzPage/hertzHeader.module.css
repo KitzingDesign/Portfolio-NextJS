@@ -1,4 +1,4 @@
-.container {
+/* .container {
 	height: 100vh;
 	max-width: 95vw;
 	margin: 0 auto;
@@ -6,14 +6,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-}
+} */
 
-.headings {
+/* .headings {
 	padding-bottom: 100px;
 	position: relative;
-}
+} */
 
-.headImg {
+/* .headImg {
 	width: 55vw;
 	z-index: -1;
 }
@@ -26,15 +26,15 @@
 	line-height: 0.6;
 	color: #0b0a11;
 	opacity: 0.09;
-}
+} */
 
-.vertical {
+/* .vertical {
 	padding-bottom: 50px;
 	writing-mode: tb-rl;
 	transform: rotate(180deg);
-}
+} */
 
-.year {
+/* .year {
 	color: #fed000;
 	font-weight: 500;
 	font-size: 20vw;
@@ -45,9 +45,9 @@
 	animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 	animation-fill-mode: forwards;
 	animation-delay: 0.5s;
-}
+} */
 
-.season {
+/* .season {
 	text-transform: uppercase;
 	text-align: right;
 	font-weight: 400;
@@ -63,9 +63,9 @@
 	animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 	animation-fill-mode: forwards;
 	animation-delay: 0.7s;
-}
+} */
 
-.above {
+/* .above {
 	position: absolute;
 	z-index: 5;
 	left: 7vw;
@@ -78,9 +78,9 @@
 	animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 	animation-fill-mode: forwards;
 	animation-delay: 0.9s;
-}
+} */
 
-@keyframes year {
+/* @keyframes year {
 	from {
 		opacity: 0;
 		transform: translate(10vw, 0);
@@ -109,12 +109,12 @@
 		opacity: 1;
 		transform: translate(0, 0);
 	}
-}
+} */
 
 @media (max-width: 84em) {
-	.container {
+	/* .container {
 		height: inherit;
-	}
+	} */
 	.nr {
 	}
 	.above {
@@ -125,7 +125,7 @@
 	}
 }
 
-@media (max-width: 75em) {
+/* @media (max-width: 75em) {
 	.above {
 		bottom: 90px;
 	}
@@ -141,4 +141,4 @@
 	.season {
 		margin-bottom: 20px;
 	}
-}
+} */

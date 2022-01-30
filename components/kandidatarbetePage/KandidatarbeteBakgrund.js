@@ -1,10 +1,87 @@
 import Divider from "../UI/divider";
 import styles from "./KandidatarbeteBakgrund.module.css";
 import Image from "next/image";
+import styled from "@emotion/styled";
+
+//emotion styles
+const Container = styled.div`
+	padding-top: 0;
+	width: 70vw;
+	margin: 0 auto;
+	& > h2 {
+		margin: 0 auto;
+		font-size: 4.4rem;
+		padding-bottom: 1.2rem;
+	}
+	& > p {
+		text-align: right;
+		margin: 0 auto;
+		font-size: 1.6rem !important;
+		font-weight: 600;
+		padding-top: 1.6rem;
+	}
+	& > section {
+		margin: 0 auto;
+		font-size: 2.4rem;
+		line-height: 1.2;
+
+		padding-top: 2.4rem;
+	}
+	& > h3 {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.6rem !important;
+
+		padding-top: 9.6rem;
+		padding-bottom: 1.2rem;
+		color: #333;
+	}
+	@media (max-width: 59em) {
+		padding-top: 0;
+
+		width: 70vw;
+
+		& > p {
+			padding-top: 8px;
+		}
+		& > section {
+			padding-top: 24px;
+		}
+		& > h3 {
+			padding-top: 64px;
+		}
+	}
+	@media (max-width: 25em) {
+		width: 80vw;
+		& > h3 {
+			padding-top: 32px;
+		}
+	}
+`;
+
+const FlexImg = styled.div`
+	margin: 0 auto;
+
+	display: flex;
+	width: 90%;
+
+	align-items: center;
+	justify-content: space-around;
+
+	/* filter: grayscale(100%); */
+	filter: brightness(0%);
+	opacity: 50%;
+	@media (max-width: 59em) {
+		width: 90%;
+	}
+`;
+const ImgContainer = styled.div`
+	width: 10%;
+`;
 
 const KandidatarbeteBakgrund = () => {
 	return (
-		<div className={styles.container}>
+		<Container>
 			{/* <p className={styles.bakgrund}>Bakgrund</p> */}
 			<h2 data-aos="fade-up">Bakgrund</h2>
 			<Divider color="black" />
@@ -38,8 +115,8 @@ const KandidatarbeteBakgrund = () => {
 
 			<h3 data-aos="fade-up">Collaberation Between</h3>
 			<div data-aos="fade-up">
-				<div className={styles.flexImg}>
-					<div className={styles.imgContainer}>
+				<FlexImg>
+					<ImgContainer>
 						<Image
 							width="100%"
 							height="100%"
@@ -48,43 +125,40 @@ const KandidatarbeteBakgrund = () => {
 							src="/Kandidat/Chalmers.svg"
 							alt="Chalmers logo"
 						/>
-					</div>
-					<div className={styles.imgContainer}>
+					</ImgContainer>
+					<ImgContainer>
 						<Image
 							width="100%"
 							height="100%"
 							layout="responsive"
 							objectFit="contain"
-							className={styles.imgContainer}
 							src="/Kandidat/Boid.svg"
 							alt="Boid logo"
 						/>
-					</div>
-					<div className={styles.imgContainer}>
+					</ImgContainer>
+					<ImgContainer>
 						<Image
 							width="100%"
 							height="100%"
 							layout="responsive"
 							objectFit="contain"
-							className={styles.imgContainer}
 							src="/Kandidat/Vargön.svg"
 							alt="Vargön Alloys logo"
 						/>
-					</div>
-					<div className={styles.imgContainer}>
+					</ImgContainer>
+					<ImgContainer>
 						<Image
 							width="100%"
 							height="100%"
 							layout="responsive"
 							objectFit="contain"
-							className={styles.imgContainer}
 							src="/Kandidat/Guard.svg"
 							alt="Guard logo"
 						/>
-					</div>
-				</div>
+					</ImgContainer>
+				</FlexImg>
 			</div>
-		</div>
+		</Container>
 	);
 };
 export default KandidatarbeteBakgrund;
